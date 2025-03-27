@@ -1,0 +1,2158 @@
+PccAppEncoder v22.1
+
+Info: Using external color space conversion
+absoluteD1_ should be true when multipleStreams_ is false
+absoluteT1 should be true when absoluteD1 is true
++ Parameters
+	 profileToolSet                             1
+	 profileReconstructionIdc                   1
+	 rawPointsPatch                             0
+	 noAttributes                               0
+	 attribute Colour Plane                     420
+	 enhancedOccupancyMapCode                   0
+	 useRawPointsSeparateVideo                  0
+	 uncompressedDataPath                       ../V-PCC-Dataset/sequences/8i/8iVFBv2/longdress/Ply/longdress_vox10_%i.ply
+	 compressedStreamPath                       ./out/bin/longdress/longdress_r1_CTU64_RA.bin
+	 reconstructedDataPath                      ./out/ply/longdress/longdress_r1_CTU64_RA_rec_%04d.ply
+	 frameCount                                 8
+	 mapCountMinus1                             1
+	 startFrameNumber                           1051
+	 groupOfFramesSize                          32
+	 colorTransform                             0
+	 nbThread                                   1
+	 keepIntermediateFiles                      1
+	 multipleStreams                            0
+	 multipleStreams                            0
+	 videoEncoderInternalBitdepth               10
+	 forcedSsvhUnitSizePrecisionBytes           0
+	 constrainedPack                            1
+	 maxNumRefPatchList                         1
+	 maxNumRefIndex                             1
+	 Segmentation
+	   gridBasedSegmentation                    0
+	   voxelDimensionGridBasedSegmentation      2
+	   nnNormalEstimation                       16
+	   normalOrientation                        1
+	   gridBasedRefineSegmentation              1
+	   maxNNCountRefineSegmentation             1024
+	   iterationCountRefineSegmentation         50
+	   voxelDimensionRefineSegmentation         4
+	   searchRadiusRefineSegmentation           192
+	   occupancyResolution                      16
+	   enablePatchSplitting                     1
+	   maxPatchSize                             1024
+	   quantization step for patch size         1<<4, 1<<4
+	   minPointCountPerCCPatchSegmentation      16
+	   maxNNCountPatchSegmentation              16
+	   surfaceThickness                         4
+	   maxAllowedDist2RawPointsDetection        9
+	   maxAllowedDist2RawPointsSelection        1
+	   lambdaRefineSegmentation                 3
+	   depthQuantizationStep                    64
+	   highGradientSeparation                   0
+	 Packing
+	   minimumImageWidth                        1280
+	   minimumImageHeight                       1280
+	   log2MaxAtlasFrameOrderCntLsb             10
+	   packingStrategy                          1
+	   useEightOrientations                     0
+	   safeGuardDistance                        0
+	   globalPatchAllocation                    1
+	   patchPrecedenceOrder                     0
+	   lowDelayEncoding                         0
+	   attributeBGFill                          1
+	   geometryPadding                          0
+	 Video encoding
+	   geometryQP                               32
+	   attributeQP                              42
+	   usePccRDO                                0
+	   colorSpaceConversionPath                 ./dependencies/HDRTools/build/bin/HDRConvert
+	   videoEncoderOccupancyPath                ./dependencies/HM-16.20+SCM-8.8/bin/TAppEncoderStatic
+	   videoEncoderGeometryPath                 ./dependencies/HM-16.20+SCM-8.8/bin/TAppEncoderStatic
+	   videoEncoderAttributePath                ./dependencies/HM-16.20+SCM-8.8/bin/TAppEncoderStatic
+	   videoEncoderOccupancyCodecId             4
+	   videoEncoderGeometryCodecId              4
+	   videoEncoderAttributeCodecId             4
+	   geometryConfig                           cfg/hm/ctc-hm-geometry-ra.cfg
+	   attributeConfig                           cfg/hm/ctc-hm-attribute-ra.cfg
+	   colorSpaceConversionConfig               cfg/hdrconvert/rgb444toyuv420.cfg
+	   inverseColorSpaceConversionConfig        cfg/hdrconvert/yuv420toyuv444_16bit.cfg
+	   apply3dMotionCompensation                1
+	 Dilation
+	   GroupDilation                            1
+	 Occupancy map encoding 
+	   maxCandidateCount                        4
+	   occupancyPrecision                       4
+	   occupancyMapConfig           cfg/hm/ctc-hm-occupancy-map-ld-main10.cfg
+	   occupancyMapQP                           8
+	   EOMFixBitCount                           2
+	   occupancyMapRefinement                   0
+	 Lossy occupancy Map coding
+	   Lossy occupancy map offset               0
+	   Lossy occupancy map threshold            0
+	   Lossy occupancy map prefilter            0
+	 Decoded Atlas Information Hash             0
+	 Geometry smoothing                         
+	   flagGeometrySmoothing                    1
+	   gridSmoothing                            1
+	   gridSize                                 8
+	   thresholdSmoothing                       64
+	   patchExpansion                           0
+	 Color smoothing
+	   flagColorSmoothing                       0
+	 Color pre-smoothing                        
+	   thresholdColorPreSmoothing               10
+	   thresholdColorPreSmoothingLocalEntropy   4.5
+	   radius2ColorPreSmoothing                 64
+	   neighborCountColorPreSmoothing           64
+	   flagColorPreSmoothing                    1
+	 Coloring
+	   bestColorSearchRange                     0
+	   numNeighborsColorTransferFwd             8
+	   numNeighborsColorTransferBwd             1
+	   useDistWeightedAverageFwd                1
+	   useDistWeightedAverageBwd                1
+	   skipAvgIfIdenticalSourcePointPresentFwd  1
+	   skipAvgIfIdenticalSourcePointPresentBwd  1
+	   distOffsetFwd                            4
+	   distOffsetBwd                            4
+	   geometryDist2ThresholdFwd                1000
+	   geometryDist2ThresholdBwd                1000
+	   maxColorDist2Fwd                         1000
+	   maxColorDist2Bwd                         1000
+	   patchColorSubsampling                    0
+	   excludeColorOutlier                      0
+	 Reconstruction 
+	   removeDuplicatePoints                    1
+	   pointLocalReconstruction                 0
+	     plrlNumberOfModes                      6
+	     patchSize                              9
+	   singleMapPixelInterleaving               0
+	   rawPointReconstruction                   1
+	   eomPointReconstruction                   1
+	   attrTransferFilter                       1
+	 surface Separation                         0
+	 Lossy raw points patch                     
+	   lossyRawPointsPatch                      0
+	   minNormSumOfInvDist4MPSelection          0.33
+	   lossyRawPointPatchGeoQP                  0
+	 raw points sorting                         
+	   mortonOrderSortRawPoints                 0
+	 Enhanced projection plane                  1
+	 AdditionalProjectionPlane                  
+	   additionalProjectionPlaneMode            0
+	   partialAdditionalProjectionPlane         0.17
+	 Geometry 2D and 3D bitdepths               
+	   geometry3dCoordinatesBitdepth            10
+	   geometryNominal2dBitdepth                8
+	 Image partitions and tiles                 
+	 tileSegmentationType                       0
+	 Point cloud partitions and tiles           
+	   enablePointCloudPartitioning             0
+	 Patch block filtering
+	   pbfEnableFlag                            0
+	   pbfPassesCount                           0
+	   pbfFilterSize                            0
+	   pbfLog2Threshold                         2
+	 Profile tier level
+	   tierFlag                                 0
+	   profileCodecGroupIdc                     1
+	   profileToolsetIdc                        1
+	   profileReconstructionIdc                 1
+	      pixelDeinterleavingType             : 1
+	      pointLocalReconstructionType        : 1
+	      reconstructEomType                  : 1
+	      duplicatedPointRemovalType          : 1
+	      reconstructRawType                  : 1
+	      applyGeoSmoothingType               : 1
+	      applyAttrSmoothingType              : 1
+	      applyAttrTransferFilterType         : 1
+	      applyOccupanySynthesisType          : 0
+	   levelIdc                                 30
+	   avcCodecIdIndex                          0
+	   hevcCodecIdIndex                         1
+	   shvcCodecIdIndex                         2
+	   vvcCodecIdIndex                          3
+
++ Parameters
+	   computeChecksum                      1
+	   computeMetrics                       1
+	   startFrameNumber                     0
+	   frameCount                           0
+	   uncompressedDataPath                 
+	   reconstructedDataPath                
+	   normalDataPath                       
+	   nbThread                             0
+	   resolution                           1023
+	   dropDuplicates                       2
+	   neighborsProc                        1
+	   computeC2c                           1
+	   computeC2p                           0
+	   computeColor                         1
+	   computeLidar                         0
+	   computeReflectance                   0
+	   computeHausdorff                     0
+
+Compressing 0 frames 1051 -> 1059...
+
+============= FRAME 0 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 765821
+		 CC 0 -> 196947
+		 CC 1 -> 5703
+		 CC 2 -> 1961
+		 CC 3 -> 4077
+		 CC 4 -> 135311
+		 CC 5 -> 1940
+		 CC 6 -> 2660
+		 CC 7 -> 130635
+		 CC 8 -> 9088
+		 CC 9 -> 173401
+		 CC 10 -> 674
+		 CC 11 -> 1148
+		 CC 12 -> 13848
+		 CC 13 -> 2079
+		 CC 14 -> 3154
+		 CC 15 -> 4555
+		 CC 16 -> 3194
+		 CC 17 -> 19087
+		 CC 18 -> 20547
+		 CC 19 -> 1161
+		 CC 20 -> 8319
+		 CC 21 -> 3975
+		 CC 22 -> 12708
+		 CC 23 -> 7065
+		 CC 24 -> 2502
+ # CC 25
+		 Patch 0 ->(d1,u1,v1)=( 64 , 28 , 13 )(dd,du,dv)=( 191 , 274 , 821 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 212 , 12 )(dd,du,dv)=( 127 , 59 , 127 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 93 , 238 )(dd,du,dv)=( 63 , 55 , 40 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 228 , 11 )(dd,du,dv)=( 127 , 46 , 133 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 29 , 13 )(dd,du,dv)=( 191 , 283 , 605 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 0 , 227 , 212 )(dd,du,dv)=( 63 , 36 , 46 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 192 , 213 , 42 )(dd,du,dv)=( 63 , 40 , 64 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 320 , 134 , 20 )(dd,du,dv)=( 191 , 310 , 838 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 64 , 94 , 233 )(dd,du,dv)=( 127 , 132 , 72 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 0 , 106 , 140 )(dd,du,dv)=( 191 , 344 , 866 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 128 , 45 , 240 )(dd,du,dv)=( 63 , 25 , 30 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 64 , 126 , 486 )(dd,du,dv)=( 63 , 27 , 44 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 192 , 114 , 498 )(dd,du,dv)=( 127 , 60 , 224 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 192 , 294 , 150 )(dd,du,dv)=( 63 , 36 , 72 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 128 , 282 , 298 )(dd,du,dv)=( 63 , 44 , 92 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 256 , 35 , 586 )(dd,du,dv)=( 63 , 47 , 97 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 896 , 108 , 137 )(dd,du,dv)=( 127 , 39 , 77 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 192 , 102 , 847 )(dd,du,dv)=( 63 , 112 , 163 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 384 , 112 , 830 )(dd,du,dv)=( 191 , 95 , 178 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 832 , 164 , 224 )(dd,du,dv)=( 63 , 34 , 34 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 256 , 212 , 856 )(dd,du,dv)=( 63 , 58 , 124 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 1024 , 122 , 218 )(dd,du,dv)=( 63 , 80 , 52 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 576 , 118 , 310 )(dd,du,dv)=( 127 , 78 , 140 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 512 , 118 , 662 )(dd,du,dv)=( 191 , 51 , 142 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 896 , 105 , 279 )(dd,du,dv)=( 127 , 38 , 61 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 25
+ # resampled 1025268
+ # raw points 13432
+		 CC 0 -> 455
+		 CC 1 -> 72
+		 CC 2 -> 173
+		 CC 3 -> 1485
+		 CC 4 -> 211
+		 CC 5 -> 467
+		 CC 6 -> 268
+		 CC 7 -> 75
+		 CC 8 -> 608
+		 CC 9 -> 706
+		 CC 10 -> 194
+		 CC 11 -> 106
+		 CC 12 -> 2388
+		 CC 13 -> 93
+		 CC 14 -> 402
+		 CC 15 -> 61
+		 CC 16 -> 390
+		 CC 17 -> 476
+		 CC 18 -> 260
+		 CC 19 -> 45
+		 CC 20 -> 108
+		 CC 21 -> 77
+		 CC 22 -> 179
+		 CC 23 -> 489
+		 CC 24 -> 220
+		 CC 25 -> 186
+		 CC 26 -> 988
+ # CC 27
+		 Patch 25 ->(d1,u1,v1)=( 0 , 242 , 154 )(dd,du,dv)=( 63 , 18 , 37 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 0 , 235 , 160 )(dd,du,dv)=( 63 , 11 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 128 , 93 , 423 )(dd,du,dv)=( 63 , 10 , 32 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 128 , 114 , 446 )(dd,du,dv)=( 63 , 28 , 64 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 128 , 94 , 481 )(dd,du,dv)=( 63 , 20 , 16 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 128 , 81 , 483 )(dd,du,dv)=( 63 , 19 , 32 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 320 , 165 , 146 )(dd,du,dv)=( 63 , 8 , 43 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 185 , 249 )(dd,du,dv)=( 63 , 7 , 8 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 320 , 171 , 210 )(dd,du,dv)=( 63 , 13 , 54 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 384 , 116 , 378 )(dd,du,dv)=( 127 , 31 , 70 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 64 , 79 , 667 )(dd,du,dv)=( 63 , 12 , 9 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 128 , 118 , 550 )(dd,du,dv)=( 63 , 6 , 22 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 128 , 114 , 594 )(dd,du,dv)=( 63 , 31 , 135 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 64 , 225 , 575 )(dd,du,dv)=( 63 , 9 , 13 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 64 , 243 , 594 )(dd,du,dv)=( 63 , 28 , 10 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 64 , 246 , 876 )(dd,du,dv)=( 63 , 6 , 7 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 192 , 110 , 919 )(dd,du,dv)=( 63 , 23 , 15 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 64 , 230 , 933 )(dd,du,dv)=( 63 , 25 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 64 , 234 , 942 )(dd,du,dv)=( 63 , 32 , 14 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 192 , 135 , 913 )(dd,du,dv)=( 63 , 9 , 7 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 64 , 314 , 612 )(dd,du,dv)=( 63 , 11 , 7 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 320 , 168 , 503 )(dd,du,dv)=( 63 , 7 , 19 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 256 , 266 , 539 )(dd,du,dv)=( 63 , 5 , 25 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 576 , 142 , 360 )(dd,du,dv)=( 63 , 14 , 45 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 256 , 303 , 651 )(dd,du,dv)=( 63 , 13 , 32 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 256 , 332 , 643 )(dd,du,dv)=( 127 , 21 , 12 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 320 , 127 , 893 )(dd,du,dv)=( 63 , 41 , 30 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 52
+ # resampled 1035380
+ # raw points 3475
+		 CC 0 -> 209
+		 CC 1 -> 85
+ # CC 2
+		 Patch 52 ->(d1,u1,v1)=( 128 , 118 , 452 )(dd,du,dv)=( 63 , 17 , 31 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 64 , 243 , 934 )(dd,du,dv)=( 63 , 11 , 7 ),Normal: 2 Direction: 0 EOM: 0
+ # patches 54
+ # resampled 1035668
+ # raw points 3222
+ # CC 0
+[done]
+
+============= FRAME 1 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 775745
+		 CC 0 -> 5795
+		 CC 1 -> 203985
+		 CC 2 -> 1951
+		 CC 3 -> 3930
+		 CC 4 -> 145651
+		 CC 5 -> 3556
+		 CC 6 -> 8588
+		 CC 7 -> 171166
+		 CC 8 -> 779
+		 CC 9 -> 851
+		 CC 10 -> 126846
+		 CC 11 -> 1255
+		 CC 12 -> 2937
+		 CC 13 -> 13394
+		 CC 14 -> 5134
+		 CC 15 -> 3434
+		 CC 16 -> 18560
+		 CC 17 -> 1114
+		 CC 18 -> 20280
+		 CC 19 -> 8408
+		 CC 20 -> 23
+		 CC 21 -> 4282
+		 CC 22 -> 13913
+		 CC 23 -> 7661
+		 CC 24 -> 2177
+ # CC 25
+		 Patch 0 ->(d1,u1,v1)=( 0 , 213 , 11 )(dd,du,dv)=( 127 , 60 , 125 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 64 , 21 , 13 )(dd,du,dv)=( 191 , 289 , 821 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 92 , 238 )(dd,du,dv)=( 63 , 56 , 42 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 232 , 11 )(dd,du,dv)=( 127 , 43 , 135 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 25 , 13 )(dd,du,dv)=( 191 , 289 , 605 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 192 , 222 , 26 )(dd,du,dv)=( 127 , 44 , 72 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 64 , 94 , 239 )(dd,du,dv)=( 127 , 139 , 69 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 106 , 144 )(dd,du,dv)=( 191 , 341 , 862 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 128 , 37 , 239 )(dd,du,dv)=( 63 , 31 , 26 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 0 , 264 , 226 )(dd,du,dv)=( 63 , 22 , 39 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 384 , 136 , 15 )(dd,du,dv)=( 191 , 307 , 843 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 192 , 294 , 154 )(dd,du,dv)=( 63 , 32 , 48 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 128 , 286 , 298 )(dd,du,dv)=( 63 , 38 , 88 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 192 , 114 , 514 )(dd,du,dv)=( 127 , 61 , 208 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 256 , 36 , 566 )(dd,du,dv)=( 63 , 48 , 109 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 896 , 110 , 137 )(dd,du,dv)=( 127 , 42 , 77 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 192 , 100 , 848 )(dd,du,dv)=( 63 , 114 , 164 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 832 , 169 , 226 )(dd,du,dv)=( 63 , 33 , 32 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 320 , 116 , 830 )(dd,du,dv)=( 127 , 98 , 176 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 256 , 211 , 858 )(dd,du,dv)=( 63 , 57 , 124 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 64 , 213 , 937 )(dd,du,dv)=( 63 , 3 , 5 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 1024 , 123 , 219 )(dd,du,dv)=( 63 , 82 , 51 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 576 , 114 , 313 )(dd,du,dv)=( 127 , 80 , 134 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 512 , 118 , 662 )(dd,du,dv)=( 191 , 50 , 145 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 896 , 108 , 284 )(dd,du,dv)=( 127 , 36 , 55 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 25
+ # resampled 1035896
+ # raw points 15334
+		 CC 0 -> 1173
+		 CC 1 -> 554
+		 CC 2 -> 62
+		 CC 3 -> 58
+		 CC 4 -> 90
+		 CC 5 -> 84
+		 CC 6 -> 60
+		 CC 7 -> 148
+		 CC 8 -> 1355
+		 CC 9 -> 871
+		 CC 10 -> 116
+		 CC 11 -> 53
+		 CC 12 -> 806
+		 CC 13 -> 141
+		 CC 14 -> 919
+		 CC 15 -> 94
+		 CC 16 -> 273
+		 CC 17 -> 2236
+		 CC 18 -> 87
+		 CC 19 -> 195
+		 CC 20 -> 348
+		 CC 21 -> 62
+		 CC 22 -> 193
+		 CC 23 -> 361
+		 CC 24 -> 328
+		 CC 25 -> 126
+		 CC 26 -> 103
+		 CC 27 -> 118
+		 CC 28 -> 187
+		 CC 29 -> 1214
+		 CC 30 -> 238
+		 CC 31 -> 142
+		 CC 32 -> 127
+		 CC 33 -> 333
+ # CC 34
+		 Patch 25 ->(d1,u1,v1)=( 128 , 122 , 463 )(dd,du,dv)=( 63 , 22 , 58 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 128 , 108 , 483 )(dd,du,dv)=( 63 , 10 , 38 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 128 , 94 , 451 )(dd,du,dv)=( 63 , 6 , 10 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 128 , 86 , 486 )(dd,du,dv)=( 63 , 12 , 2 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 128 , 97 , 486 )(dd,du,dv)=( 63 , 7 , 23 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 128 , 135 , 444 )(dd,du,dv)=( 63 , 16 , 15 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 128 , 136 , 461 )(dd,du,dv)=( 63 , 13 , 7 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 163 , 148 )(dd,du,dv)=( 63 , 6 , 19 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 320 , 252 , 137 )(dd,du,dv)=( 63 , 10 , 99 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 170 , 198 )(dd,du,dv)=( 63 , 15 , 70 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 320 , 80 , 285 )(dd,du,dv)=( 63 , 6 , 20 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 320 , 114 , 349 )(dd,du,dv)=( 63 , 7 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 384 , 99 , 352 )(dd,du,dv)=( 127 , 40 , 79 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 320 , 187 , 253 )(dd,du,dv)=( 63 , 7 , 26 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 320 , 249 , 302 )(dd,du,dv)=( 63 , 12 , 57 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 320 , 252 , 361 )(dd,du,dv)=( 63 , 5 , 18 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 128 , 122 , 539 )(dd,du,dv)=( 63 , 11 , 34 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 128 , 118 , 582 )(dd,du,dv)=( 63 , 32 , 146 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 64 , 236 , 568 )(dd,du,dv)=( 63 , 14 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 64 , 223 , 572 )(dd,du,dv)=( 63 , 11 , 20 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 64 , 244 , 595 )(dd,du,dv)=( 63 , 21 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 128 , 73 , 646 )(dd,du,dv)=( 63 , 11 , 12 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 64 , 214 , 617 )(dd,du,dv)=( 63 , 4 , 55 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 192 , 115 , 912 )(dd,du,dv)=( 63 , 32 , 18 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 64 , 228 , 931 )(dd,du,dv)=( 63 , 20 , 16 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 64 , 234 , 952 )(dd,du,dv)=( 63 , 15 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 64 , 312 , 611 )(dd,du,dv)=( 63 , 10 , 7 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 320 , 169 , 507 )(dd,du,dv)=( 63 , 9 , 26 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 256 , 266 , 538 )(dd,du,dv)=( 63 , 6 , 26 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 576 , 127 , 359 )(dd,du,dv)=( 127 , 25 , 46 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 256 , 306 , 649 )(dd,du,dv)=( 127 , 14 , 37 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 256 , 332 , 641 )(dd,du,dv)=( 127 , 23 , 11 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 57 ->(d1,u1,v1)=( 640 , 133 , 412 )(dd,du,dv)=( 63 , 4 , 21 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 58 ->(d1,u1,v1)=( 320 , 133 , 900 )(dd,du,dv)=( 63 , 32 , 19 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 59
+ # resampled 1046830
+ # raw points 3891
+		 CC 0 -> 143
+		 CC 1 -> 119
+		 CC 2 -> 291
+		 CC 3 -> 199
+		 CC 4 -> 105
+		 CC 5 -> 166
+ # CC 6
+		 Patch 59 ->(d1,u1,v1)=( 128 , 109 , 484 )(dd,du,dv)=( 63 , 8 , 32 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 60 ->(d1,u1,v1)=( 128 , 127 , 467 )(dd,du,dv)=( 63 , 12 , 14 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 61 ->(d1,u1,v1)=( 320 , 253 , 138 )(dd,du,dv)=( 63 , 7 , 79 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 62 ->(d1,u1,v1)=( 320 , 171 , 199 )(dd,du,dv)=( 63 , 11 , 50 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 63 ->(d1,u1,v1)=( 320 , 252 , 306 )(dd,du,dv)=( 63 , 8 , 29 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 64 ->(d1,u1,v1)=( 576 , 137 , 361 )(dd,du,dv)=( 63 , 13 , 37 ),Normal: 1 Direction: 0 EOM: 0
+ # patches 65
+ # resampled 1048022
+ # raw points 2907
+ # CC 0
+[done]
+
+============= FRAME 2 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 783559
+		 CC 0 -> 209512
+		 CC 1 -> 5389
+		 CC 2 -> 1921
+		 CC 3 -> 4184
+		 CC 4 -> 158833
+		 CC 5 -> 7038
+		 CC 6 -> 1720
+		 CC 7 -> 167872
+		 CC 8 -> 2276
+		 CC 9 -> 125298
+		 CC 10 -> 1904
+		 CC 11 -> 12558
+		 CC 12 -> 5579
+		 CC 13 -> 3809
+		 CC 14 -> 18265
+		 CC 15 -> 1108
+		 CC 16 -> 20237
+		 CC 17 -> 8824
+		 CC 18 -> 4096
+		 CC 19 -> 13594
+		 CC 20 -> 6432
+		 CC 21 -> 3017
+ # CC 22
+		 Patch 0 ->(d1,u1,v1)=( 64 , 13 , 13 )(dd,du,dv)=( 191 , 305 , 819 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 11 )(dd,du,dv)=( 127 , 59 , 120 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 91 , 238 )(dd,du,dv)=( 63 , 57 , 40 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 232 , 12 )(dd,du,dv)=( 127 , 43 , 136 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 14 , 14 )(dd,du,dv)=( 191 , 304 , 600 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 64 , 93 , 253 )(dd,du,dv)=( 127 , 149 , 57 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 192 , 230 , 37 )(dd,du,dv)=( 127 , 40 , 41 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 103 , 166 )(dd,du,dv)=( 191 , 348 , 840 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 0 , 269 , 228 )(dd,du,dv)=( 63 , 42 , 47 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 384 , 140 , 16 )(dd,du,dv)=( 191 , 306 , 842 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 128 , 287 , 310 )(dd,du,dv)=( 63 , 32 , 60 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 192 , 118 , 534 )(dd,du,dv)=( 127 , 60 , 184 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 256 , 44 , 566 )(dd,du,dv)=( 63 , 50 , 112 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 896 , 116 , 136 )(dd,du,dv)=( 127 , 45 , 83 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 192 , 115 , 849 )(dd,du,dv)=( 63 , 103 , 163 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 832 , 170 , 226 )(dd,du,dv)=( 63 , 36 , 32 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 320 , 118 , 830 )(dd,du,dv)=( 127 , 96 , 176 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 256 , 211 , 858 )(dd,du,dv)=( 63 , 60 , 124 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 1024 , 127 , 224 )(dd,du,dv)=( 63 , 81 , 46 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 576 , 112 , 314 )(dd,du,dv)=( 127 , 80 , 137 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 512 , 120 , 664 )(dd,du,dv)=( 191 , 46 , 130 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 896 , 110 , 283 )(dd,du,dv)=( 127 , 40 , 71 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 22
+ # resampled 1046154
+ # raw points 15825
+		 CC 0 -> 105
+		 CC 1 -> 128
+		 CC 2 -> 78
+		 CC 3 -> 342
+		 CC 4 -> 373
+		 CC 5 -> 161
+		 CC 6 -> 615
+		 CC 7 -> 1518
+		 CC 8 -> 87
+		 CC 9 -> 506
+		 CC 10 -> 1952
+		 CC 11 -> 230
+		 CC 12 -> 1894
+		 CC 13 -> 226
+		 CC 14 -> 216
+		 CC 15 -> 253
+		 CC 16 -> 2056
+		 CC 17 -> 194
+		 CC 18 -> 248
+		 CC 19 -> 90
+		 CC 20 -> 61
+		 CC 21 -> 117
+		 CC 22 -> 1086
+		 CC 23 -> 351
+		 CC 24 -> 92
+		 CC 25 -> 88
+		 CC 26 -> 337
+ # CC 27
+		 Patch 22 ->(d1,u1,v1)=( 128 , 108 , 431 )(dd,du,dv)=( 63 , 7 , 23 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 128 , 115 , 484 )(dd,du,dv)=( 63 , 5 , 16 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 64 , 192 , 395 )(dd,du,dv)=( 63 , 10 , 10 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 128 , 126 , 459 )(dd,du,dv)=( 63 , 24 , 26 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 128 , 134 , 484 )(dd,du,dv)=( 63 , 16 , 62 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 320 , 42 , 150 )(dd,du,dv)=( 63 , 11 , 18 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 320 , 163 , 150 )(dd,du,dv)=( 63 , 9 , 42 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 320 , 247 , 131 )(dd,du,dv)=( 63 , 19 , 80 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 320 , 188 , 249 )(dd,du,dv)=( 63 , 10 , 9 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 320 , 172 , 194 )(dd,du,dv)=( 63 , 13 , 62 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 75 , 286 )(dd,du,dv)=( 63 , 59 , 135 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 320 , 190 , 266 )(dd,du,dv)=( 63 , 7 , 21 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 248 , 258 )(dd,du,dv)=( 63 , 16 , 133 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 64 , 233 , 566 )(dd,du,dv)=( 63 , 14 , 16 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 64 , 222 , 585 )(dd,du,dv)=( 63 , 9 , 29 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 64 , 243 , 594 )(dd,du,dv)=( 63 , 21 , 7 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 128 , 126 , 548 )(dd,du,dv)=( 63 , 30 , 162 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 128 , 146 , 713 )(dd,du,dv)=( 63 , 11 , 24 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 192 , 122 , 915 )(dd,du,dv)=( 63 , 27 , 12 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 64 , 235 , 919 )(dd,du,dv)=( 63 , 8 , 11 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 320 , 171 , 512 )(dd,du,dv)=( 63 , 6 , 16 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 256 , 267 , 542 )(dd,du,dv)=( 63 , 4 , 20 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 576 , 125 , 360 )(dd,du,dv)=( 127 , 24 , 41 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 256 , 306 , 646 )(dd,du,dv)=( 127 , 20 , 48 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 192 , 333 , 640 )(dd,du,dv)=( 63 , 21 , 9 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 640 , 130 , 419 )(dd,du,dv)=( 63 , 3 , 12 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 320 , 136 , 898 )(dd,du,dv)=( 63 , 27 , 21 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 49
+ # resampled 1056798
+ # raw points 4571
+		 CC 0 -> 84
+		 CC 1 -> 254
+		 CC 2 -> 433
+		 CC 3 -> 65
+		 CC 4 -> 225
+		 CC 5 -> 96
+		 CC 6 -> 246
+ # CC 7
+		 Patch 49 ->(d1,u1,v1)=( 128 , 135 , 467 )(dd,du,dv)=( 63 , 10 , 12 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 320 , 164 , 151 )(dd,du,dv)=( 63 , 5 , 37 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 320 , 250 , 132 )(dd,du,dv)=( 63 , 14 , 66 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 320 , 176 , 212 )(dd,du,dv)=( 63 , 3 , 15 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 320 , 107 , 369 )(dd,du,dv)=( 63 , 22 , 41 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 320 , 256 , 285 )(dd,du,dv)=( 63 , 7 , 21 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 576 , 132 , 361 )(dd,du,dv)=( 63 , 15 , 38 ),Normal: 1 Direction: 0 EOM: 0
+ # patches 56
+ # resampled 1058426
+ # raw points 3237
+ # CC 0
+[done]
+
+============= FRAME 3 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 794641
+		 CC 0 -> 214242
+		 CC 1 -> 5733
+		 CC 2 -> 1895
+		 CC 3 -> 4147
+		 CC 4 -> 171584
+		 CC 5 -> 3036
+		 CC 6 -> 170980
+		 CC 7 -> 2179
+		 CC 8 -> 931
+		 CC 9 -> 118101
+		 CC 10 -> 2056
+		 CC 11 -> 2004
+		 CC 12 -> 609
+		 CC 13 -> 533
+		 CC 14 -> 22
+		 CC 15 -> 57
+		 CC 16 -> 3204
+		 CC 17 -> 9819
+		 CC 18 -> 919
+		 CC 19 -> 5115
+		 CC 20 -> 3524
+		 CC 21 -> 18718
+		 CC 22 -> 1010
+		 CC 23 -> 19583
+		 CC 24 -> 8371
+		 CC 25 -> 4404
+		 CC 26 -> 12581
+		 CC 27 -> 7046
+		 CC 28 -> 2124
+ # CC 29
+		 Patch 0 ->(d1,u1,v1)=( 64 , 6 , 10 )(dd,du,dv)=( 191 , 335 , 822 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 11 )(dd,du,dv)=( 127 , 60 , 127 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 91 , 238 )(dd,du,dv)=( 63 , 57 , 41 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 233 , 12 )(dd,du,dv)=( 127 , 42 , 138 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 6 , 13 )(dd,du,dv)=( 191 , 322 , 597 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 64 , 94 , 252 )(dd,du,dv)=( 127 , 104 , 36 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 0 , 106 , 198 )(dd,du,dv)=( 191 , 344 , 809 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 256 , 234 , 9 )(dd,du,dv)=( 63 , 40 , 61 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 0 , 310 , 244 )(dd,du,dv)=( 63 , 31 , 31 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 384 , 142 , 14 )(dd,du,dv)=( 191 , 304 , 844 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 128 , 191 , 302 )(dd,du,dv)=( 127 , 35 , 84 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 256 , 199 , 130 )(dd,du,dv)=( 63 , 68 , 56 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 128 , 228 , 291 )(dd,du,dv)=( 63 , 36 , 20 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 320 , 289 , 140 )(dd,du,dv)=( 63 , 20 , 34 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 0 , 275 , 291 )(dd,du,dv)=( 127 , 7 , 4 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 64 , 276 , 306 )(dd,du,dv)=( 63 , 7 , 25 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 128 , 286 , 322 )(dd,du,dv)=( 63 , 36 , 80 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 192 , 118 , 554 )(dd,du,dv)=( 127 , 57 , 164 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 192 , 116 , 571 )(dd,du,dv)=( 63 , 22 , 51 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 256 , 54 , 570 )(dd,du,dv)=( 63 , 50 , 100 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 896 , 121 , 139 )(dd,du,dv)=( 127 , 44 , 79 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 192 , 120 , 847 )(dd,du,dv)=( 63 , 103 , 165 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 832 , 177 , 229 )(dd,du,dv)=( 63 , 33 , 30 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 320 , 126 , 834 )(dd,du,dv)=( 127 , 94 , 172 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 256 , 212 , 857 )(dd,du,dv)=( 63 , 59 , 123 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 1024 , 130 , 224 )(dd,du,dv)=( 63 , 85 , 46 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 576 , 113 , 315 )(dd,du,dv)=( 127 , 80 , 135 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 512 , 121 , 663 )(dd,du,dv)=( 191 , 45 , 144 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 896 , 114 , 283 )(dd,du,dv)=( 127 , 35 , 60 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 29
+ # resampled 1052434
+ # raw points 19704
+		 CC 0 -> 605
+		 CC 1 -> 65
+		 CC 2 -> 126
+		 CC 3 -> 4991
+		 CC 4 -> 82
+		 CC 5 -> 226
+		 CC 6 -> 1237
+		 CC 7 -> 64
+		 CC 8 -> 351
+		 CC 9 -> 408
+		 CC 10 -> 100
+		 CC 11 -> 160
+		 CC 12 -> 4624
+		 CC 13 -> 419
+		 CC 14 -> 134
+		 CC 15 -> 199
+		 CC 16 -> 61
+		 CC 17 -> 42
+		 CC 18 -> 286
+		 CC 19 -> 255
+		 CC 20 -> 510
+		 CC 21 -> 775
+		 CC 22 -> 505
+		 CC 23 -> 605
+ # CC 24
+		 Patch 29 ->(d1,u1,v1)=( 64 , 178 , 382 )(dd,du,dv)=( 63 , 21 , 41 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 128 , 116 , 439 )(dd,du,dv)=( 63 , 5 , 11 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 128 , 136 , 465 )(dd,du,dv)=( 63 , 16 , 15 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 185 , 125 )(dd,du,dv)=( 63 , 88 , 281 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 320 , 95 , 197 )(dd,du,dv)=( 63 , 7 , 7 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 164 , 149 )(dd,du,dv)=( 63 , 6 , 40 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 320 , 72 , 285 )(dd,du,dv)=( 63 , 38 , 85 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 128 , 308 , 378 )(dd,du,dv)=( 63 , 5 , 7 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 320 , 195 , 285 )(dd,du,dv)=( 63 , 7 , 35 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 320 , 114 , 382 )(dd,du,dv)=( 63 , 22 , 42 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 320 , 244 , 410 )(dd,du,dv)=( 63 , 8 , 19 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 320 , 227 , 435 )(dd,du,dv)=( 63 , 4 , 25 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 128 , 116 , 516 )(dd,du,dv)=( 63 , 34 , 186 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 0 , 238 , 557 )(dd,du,dv)=( 127 , 24 , 25 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 64 , 226 , 592 )(dd,du,dv)=( 63 , 8 , 22 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 64 , 246 , 593 )(dd,du,dv)=( 63 , 19 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 192 , 148 , 614 )(dd,du,dv)=( 63 , 6 , 9 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 128 , 86 , 651 )(dd,du,dv)=( 63 , 7 , 9 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 64 , 234 , 923 )(dd,du,dv)=( 63 , 12 , 14 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 192 , 124 , 914 )(dd,du,dv)=( 63 , 28 , 11 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 320 , 174 , 513 )(dd,du,dv)=( 63 , 21 , 72 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 576 , 129 , 362 )(dd,du,dv)=( 63 , 17 , 29 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 256 , 310 , 643 )(dd,du,dv)=( 127 , 20 , 44 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 320 , 130 , 882 )(dd,du,dv)=( 63 , 37 , 36 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 53
+ # resampled 1069962
+ # raw points 4136
+		 CC 0 -> 98
+		 CC 1 -> 103
+		 CC 2 -> 116
+		 CC 3 -> 112
+		 CC 4 -> 67
+		 CC 5 -> 137
+ # CC 6
+		 Patch 53 ->(d1,u1,v1)=( 320 , 261 , 178 )(dd,du,dv)=( 63 , 7 , 23 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 320 , 82 , 301 )(dd,du,dv)=( 63 , 9 , 20 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 320 , 259 , 260 )(dd,du,dv)=( 63 , 6 , 41 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 64 , 246 , 559 )(dd,du,dv)=( 63 , 13 , 11 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 57 ->(d1,u1,v1)=( 64 , 237 , 924 )(dd,du,dv)=( 63 , 8 , 11 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 58 ->(d1,u1,v1)=( 576 , 132 , 363 )(dd,du,dv)=( 63 , 11 , 22 ),Normal: 1 Direction: 0 EOM: 0
+ # patches 59
+ # resampled 1070742
+ # raw points 3544
+ # CC 0
+[done]
+
+============= FRAME 4 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 806026
+		 CC 0 -> 217554
+		 CC 1 -> 5551
+		 CC 2 -> 1908
+		 CC 3 -> 4439
+		 CC 4 -> 179641
+		 CC 5 -> 1197
+		 CC 6 -> 1622
+		 CC 7 -> 169439
+		 CC 8 -> 1944
+		 CC 9 -> 550
+		 CC 10 -> 117356
+		 CC 11 -> 5497
+		 CC 12 -> 909
+		 CC 13 -> 2427
+		 CC 14 -> 10103
+		 CC 15 -> 712
+		 CC 16 -> 6157
+		 CC 17 -> 75
+		 CC 18 -> 56
+		 CC 19 -> 3542
+		 CC 20 -> 18554
+		 CC 21 -> 904
+		 CC 22 -> 20086
+		 CC 23 -> 8534
+		 CC 24 -> 4533
+		 CC 25 -> 11559
+		 CC 26 -> 8367
+		 CC 27 -> 2701
+ # CC 28
+		 Patch 0 ->(d1,u1,v1)=( 64 , 3 , 12 )(dd,du,dv)=( 191 , 369 , 818 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 12 )(dd,du,dv)=( 127 , 59 , 126 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 92 , 238 )(dd,du,dv)=( 63 , 56 , 41 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 230 , 11 )(dd,du,dv)=( 127 , 46 , 143 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 3 , 13 )(dd,du,dv)=( 191 , 366 , 597 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 128 , 11 , 233 )(dd,du,dv)=( 63 , 55 , 25 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 128 , 96 , 250 )(dd,du,dv)=( 63 , 58 , 32 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 109 , 194 )(dd,du,dv)=( 191 , 339 , 814 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 256 , 238 , 12 )(dd,du,dv)=( 127 , 36 , 50 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 0 , 347 , 248 )(dd,du,dv)=( 63 , 29 , 23 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 384 , 145 , 16 )(dd,du,dv)=( 191 , 298 , 843 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 256 , 186 , 129 )(dd,du,dv)=( 63 , 85 , 77 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 128 , 218 , 298 )(dd,du,dv)=( 63 , 51 , 22 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 128 , 280 , 306 )(dd,du,dv)=( 63 , 36 , 64 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 192 , 121 , 558 )(dd,du,dv)=( 127 , 61 , 148 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 192 , 122 , 584 )(dd,du,dv)=( 63 , 22 , 34 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 256 , 61 , 566 )(dd,du,dv)=( 63 , 51 , 116 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 128 , 158 , 574 )(dd,du,dv)=( 63 , 11 , 18 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 128 , 161 , 603 )(dd,du,dv)=( 63 , 10 , 18 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 896 , 126 , 142 )(dd,du,dv)=( 127 , 44 , 76 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 192 , 126 , 846 )(dd,du,dv)=( 63 , 102 , 166 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 832 , 184 , 230 )(dd,du,dv)=( 63 , 30 , 32 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 320 , 130 , 834 )(dd,du,dv)=( 127 , 95 , 172 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 256 , 211 , 857 )(dd,du,dv)=( 63 , 59 , 123 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 1024 , 135 , 223 )(dd,du,dv)=( 63 , 85 , 47 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 576 , 110 , 317 )(dd,du,dv)=( 127 , 85 , 121 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 512 , 123 , 646 )(dd,du,dv)=( 191 , 49 , 152 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 896 , 118 , 285 )(dd,du,dv)=( 127 , 40 , 68 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 28
+ # resampled 1053070
+ # raw points 25349
+		 CC 0 -> 69
+		 CC 1 -> 685
+		 CC 2 -> 74
+		 CC 3 -> 90
+		 CC 4 -> 8325
+		 CC 5 -> 60
+		 CC 6 -> 110
+		 CC 7 -> 2978
+		 CC 8 -> 42
+		 CC 9 -> 178
+		 CC 10 -> 247
+		 CC 11 -> 141
+		 CC 12 -> 4439
+		 CC 13 -> 737
+		 CC 14 -> 158
+		 CC 15 -> 291
+		 CC 16 -> 119
+		 CC 17 -> 129
+		 CC 18 -> 123
+		 CC 19 -> 159
+		 CC 20 -> 146
+		 CC 21 -> 61
+		 CC 22 -> 439
+		 CC 23 -> 443
+		 CC 24 -> 104
+		 CC 25 -> 849
+		 CC 26 -> 30
+		 CC 27 -> 110
+		 CC 28 -> 640
+		 CC 29 -> 426
+ # CC 30
+		 Patch 28 ->(d1,u1,v1)=( 320 , 33 , 183 )(dd,du,dv)=( 127 , 5 , 20 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 64 , 184 , 354 )(dd,du,dv)=( 63 , 25 , 57 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 128 , 124 , 440 )(dd,du,dv)=( 63 , 5 , 12 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 128 , 102 , 490 )(dd,du,dv)=( 63 , 16 , 8 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 170 , 121 )(dd,du,dv)=( 63 , 105 , 265 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 320 , 169 , 156 )(dd,du,dv)=( 63 , 2 , 16 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 329 , 48 )(dd,du,dv)=( 63 , 16 , 7 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 384 , 74 , 278 )(dd,du,dv)=( 127 , 73 , 165 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 320 , 198 , 285 )(dd,du,dv)=( 63 , 7 , 5 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 320 , 229 , 371 )(dd,du,dv)=( 63 , 7 , 19 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 320 , 229 , 397 )(dd,du,dv)=( 63 , 5 , 34 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 320 , 231 , 437 )(dd,du,dv)=( 63 , 4 , 20 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 128 , 122 , 568 )(dd,du,dv)=( 63 , 41 , 134 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 64 , 237 , 556 )(dd,du,dv)=( 63 , 32 , 38 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 64 , 251 , 591 )(dd,du,dv)=( 63 , 15 , 6 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 128 , 146 , 530 )(dd,du,dv)=( 63 , 9 , 36 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 192 , 148 , 607 )(dd,du,dv)=( 63 , 7 , 14 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 128 , 156 , 702 )(dd,du,dv)=( 63 , 8 , 20 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 64 , 211 , 914 )(dd,du,dv)=( 127 , 13 , 15 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 64 , 244 , 909 )(dd,du,dv)=( 63 , 12 , 16 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 64 , 305 , 610 )(dd,du,dv)=( 127 , 15 , 4 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 64 , 345 , 633 )(dd,du,dv)=( 63 , 11 , 11 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 576 , 127 , 363 )(dd,du,dv)=( 63 , 17 , 17 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 320 , 179 , 517 )(dd,du,dv)=( 63 , 19 , 67 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 256 , 321 , 624 )(dd,du,dv)=( 63 , 26 , 2 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 256 , 310 , 640 )(dd,du,dv)=( 127 , 24 , 51 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 640 , 121 , 406 )(dd,du,dv)=( 63 , 7 , 5 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 448 , 129 , 651 )(dd,du,dv)=( 63 , 8 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 320 , 146 , 850 )(dd,du,dv)=( 63 , 18 , 40 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 57 ->(d1,u1,v1)=( 320 , 134 , 895 )(dd,du,dv)=( 63 , 37 , 26 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 58
+ # resampled 1077744
+ # raw points 4814
+		 CC 0 -> 528
+		 CC 1 -> 463
+		 CC 2 -> 216
+ # CC 3
+		 Patch 58 ->(d1,u1,v1)=( 320 , 260 , 204 )(dd,du,dv)=( 63 , 10 , 100 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 59 ->(d1,u1,v1)=( 320 , 104 , 367 )(dd,du,dv)=( 63 , 29 , 49 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 60 ->(d1,u1,v1)=( 256 , 313 , 643 )(dd,du,dv)=( 127 , 18 , 38 ),Normal: 2 Direction: 1 EOM: 0
+ # patches 61
+ # resampled 1079212
+ # raw points 3614
+ # CC 0
+[done]
+
+============= FRAME 5 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 805874
+		 CC 0 -> 218517
+		 CC 1 -> 5623
+		 CC 2 -> 2006
+		 CC 3 -> 3424
+		 CC 4 -> 177762
+		 CC 5 -> 1007
+		 CC 6 -> 3230
+		 CC 7 -> 162201
+		 CC 8 -> 4018
+		 CC 9 -> 120503
+		 CC 10 -> 4454
+		 CC 11 -> 718
+		 CC 12 -> 1717
+		 CC 13 -> 70
+		 CC 14 -> 1732
+		 CC 15 -> 9586
+		 CC 16 -> 7074
+		 CC 17 -> 17
+		 CC 18 -> 3302
+		 CC 19 -> 17714
+		 CC 20 -> 1301
+		 CC 21 -> 21996
+		 CC 22 -> 8368
+		 CC 23 -> 4791
+		 CC 24 -> 8853
+		 CC 25 -> 2353
+		 CC 26 -> 10224
+		 CC 27 -> 39
+		 CC 28 -> 3201
+ # CC 29
+		 Patch 0 ->(d1,u1,v1)=( 64 , 0 , 13 )(dd,du,dv)=( 191 , 382 , 817 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 10 )(dd,du,dv)=( 127 , 59 , 126 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 91 , 238 )(dd,du,dv)=( 63 , 57 , 42 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 233 , 12 )(dd,du,dv)=( 127 , 42 , 126 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 0 , 14 )(dd,du,dv)=( 191 , 378 , 604 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 128 , 8 , 232 )(dd,du,dv)=( 63 , 56 , 25 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 64 , 98 , 249 )(dd,du,dv)=( 127 , 112 , 37 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 113 , 202 )(dd,du,dv)=( 191 , 333 , 804 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 0 , 290 , 236 )(dd,du,dv)=( 127 , 110 , 46 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 448 , 146 , 21 )(dd,du,dv)=( 191 , 297 , 837 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 256 , 206 , 129 )(dd,du,dv)=( 63 , 68 , 77 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 128 , 226 , 306 )(dd,du,dv)=( 63 , 48 , 19 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 320 , 276 , 190 )(dd,du,dv)=( 63 , 26 , 64 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 320 , 256 , 229 )(dd,du,dv)=( 63 , 6 , 16 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 128 , 282 , 302 )(dd,du,dv)=( 63 , 29 , 52 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 192 , 121 , 562 )(dd,du,dv)=( 127 , 61 , 148 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 320 , 62 , 560 )(dd,du,dv)=( 127 , 56 , 122 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 128 , 166 , 584 )(dd,du,dv)=( 63 , 3 , 5 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 896 , 131 , 145 )(dd,du,dv)=( 127 , 42 , 75 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 192 , 135 , 845 )(dd,du,dv)=( 63 , 97 , 167 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 832 , 187 , 226 )(dd,du,dv)=( 63 , 35 , 36 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 320 , 130 , 832 )(dd,du,dv)=( 127 , 101 , 173 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 256 , 211 , 858 )(dd,du,dv)=( 63 , 60 , 120 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 1024 , 141 , 225 )(dd,du,dv)=( 63 , 85 , 47 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 576 , 118 , 305 )(dd,du,dv)=( 127 , 81 , 117 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 384 , 186 , 642 )(dd,du,dv)=( 127 , 36 , 60 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 512 , 122 , 628 )(dd,du,dv)=( 191 , 61 , 166 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 64 , 407 , 640 )(dd,du,dv)=( 127 , 5 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 896 , 125 , 288 )(dd,du,dv)=( 127 , 40 , 71 ),Normal: 1 Direction: 1 EOM: 0
+ # patches 29
+ # resampled 1012426
+ # raw points 55664
+		 CC 0 -> 142
+		 CC 1 -> 71
+		 CC 2 -> 72
+		 CC 3 -> 8206
+		 CC 4 -> 3246
+		 CC 5 -> 61
+		 CC 6 -> 247
+		 CC 7 -> 358
+		 CC 8 -> 55
+		 CC 9 -> 160
+		 CC 10 -> 16
+		 CC 11 -> 467
+		 CC 12 -> 4472
+		 CC 13 -> 32453
+		 CC 14 -> 162
+		 CC 15 -> 84
+		 CC 16 -> 73
+		 CC 17 -> 142
+		 CC 18 -> 447
+		 CC 19 -> 107
+		 CC 20 -> 44
+		 CC 21 -> 2095
+ # CC 22
+		 Patch 29 ->(d1,u1,v1)=( 128 , 101 , 412 )(dd,du,dv)=( 127 , 17 , 26 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 128 , 110 , 488 )(dd,du,dv)=( 63 , 14 , 7 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 128 , 130 , 424 )(dd,du,dv)=( 63 , 6 , 18 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 320 , 183 , 123 )(dd,du,dv)=( 63 , 105 , 238 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 384 , 66 , 262 )(dd,du,dv)=( 127 , 89 , 190 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 202 , 272 )(dd,du,dv)=( 63 , 5 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 320 , 204 , 302 )(dd,du,dv)=( 63 , 6 , 21 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 320 , 232 , 361 )(dd,du,dv)=( 63 , 7 , 28 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 320 , 234 , 417 )(dd,du,dv)=( 63 , 3 , 11 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 320 , 234 , 431 )(dd,du,dv)=( 63 , 6 , 24 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 320 , 213 , 464 )(dd,du,dv)=( 63 , 4 , 6 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 64 , 245 , 556 )(dd,du,dv)=( 63 , 27 , 30 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 128 , 129 , 529 )(dd,du,dv)=( 63 , 33 , 174 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 256 , 146 , 610 )(dd,du,dv)=( 127 , 296 , 248 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 64 , 247 , 911 )(dd,du,dv)=( 63 , 16 , 12 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 192 , 150 , 910 )(dd,du,dv)=( 63 , 10 , 6 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 64 , 256 , 591 )(dd,du,dv)=( 63 , 13 , 3 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 64 , 342 , 633 )(dd,du,dv)=( 63 , 18 , 15 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 320 , 183 , 513 )(dd,du,dv)=( 63 , 18 , 63 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 448 , 125 , 638 )(dd,du,dv)=( 63 , 10 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 448 , 132 , 652 )(dd,du,dv)=( 63 , 6 , 7 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 320 , 141 , 864 )(dd,du,dv)=( 63 , 42 , 55 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 51
+ # resampled 1078218
+ # raw points 4588
+		 CC 0 -> 64
+		 CC 1 -> 37
+		 CC 2 -> 676
+		 CC 3 -> 379
+		 CC 4 -> 182
+		 CC 5 -> 92
+		 CC 6 -> 72
+		 CC 7 -> 104
+ # CC 8
+		 Patch 51 ->(d1,u1,v1)=( 320 , 195 , 128 )(dd,du,dv)=( 63 , 10 , 11 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 320 , 265 , 182 )(dd,du,dv)=( 63 , 5 , 6 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 320 , 97 , 352 )(dd,du,dv)=( 63 , 41 , 67 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 320 , 258 , 255 )(dd,du,dv)=( 63 , 11 , 54 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 128 , 135 , 576 )(dd,du,dv)=( 63 , 11 , 25 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 320 , 157 , 873 )(dd,du,dv)=( 63 , 11 , 6 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 57 ->(d1,u1,v1)=( 320 , 146 , 887 )(dd,du,dv)=( 63 , 7 , 12 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 58 ->(d1,u1,v1)=( 320 , 164 , 905 )(dd,du,dv)=( 63 , 15 , 12 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 59
+ # resampled 1080074
+ # raw points 3023
+ # CC 0
+[done]
+
+============= FRAME 6 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 806487
+		 CC 0 -> 222137
+		 CC 1 -> 5637
+		 CC 2 -> 2020
+		 CC 3 -> 3469
+		 CC 4 -> 183954
+		 CC 5 -> 1267
+		 CC 6 -> 510
+		 CC 7 -> 3851
+		 CC 8 -> 123450
+		 CC 9 -> 148803
+		 CC 10 -> 698
+		 CC 11 -> 4611
+		 CC 12 -> 102
+		 CC 13 -> 2161
+		 CC 14 -> 1241
+		 CC 15 -> 9331
+		 CC 16 -> 7048
+		 CC 17 -> 1047
+		 CC 18 -> 19
+		 CC 19 -> 3227
+		 CC 20 -> 18697
+		 CC 21 -> 8263
+		 CC 22 -> 1043
+		 CC 23 -> 22337
+		 CC 24 -> 4369
+		 CC 25 -> 12575
+		 CC 26 -> 3508
+		 CC 27 -> 8488
+		 CC 28 -> 2496
+		 CC 29 -> 18
+ # CC 30
+		 Patch 0 ->(d1,u1,v1)=( 64 , 1 , 13 )(dd,du,dv)=( 191 , 401 , 818 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 11 )(dd,du,dv)=( 127 , 60 , 123 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 92 , 238 )(dd,du,dv)=( 63 , 56 , 42 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 233 , 12 )(dd,du,dv)=( 127 , 43 , 118 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 384 , 1 , 14 )(dd,du,dv)=( 191 , 401 , 609 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 128 , 6 , 233 )(dd,du,dv)=( 63 , 58 , 28 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 128 , 105 , 246 )(dd,du,dv)=( 63 , 37 , 20 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 310 , 236 )(dd,du,dv)=( 127 , 110 , 46 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 448 , 149 , 26 )(dd,du,dv)=( 191 , 297 , 832 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 0 , 118 , 270 )(dd,du,dv)=( 191 , 328 , 736 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 64 , 176 , 258 )(dd,du,dv)=( 127 , 39 , 24 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 256 , 219 , 130 )(dd,du,dv)=( 63 , 58 , 71 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 320 , 247 , 182 )(dd,du,dv)=( 63 , 14 , 20 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 320 , 273 , 190 )(dd,du,dv)=( 63 , 33 , 60 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 128 , 280 , 298 )(dd,du,dv)=( 63 , 28 , 41 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 192 , 122 , 566 )(dd,du,dv)=( 63 , 61 , 140 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 320 , 67 , 562 )(dd,du,dv)=( 127 , 55 , 120 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 192 , 135 , 573 )(dd,du,dv)=( 63 , 21 , 53 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 128 , 174 , 624 )(dd,du,dv)=( 63 , 4 , 8 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 896 , 137 , 149 )(dd,du,dv)=( 127 , 42 , 73 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 192 , 134 , 846 )(dd,du,dv)=( 63 , 105 , 168 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 256 , 213 , 857 )(dd,du,dv)=( 63 , 58 , 122 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 832 , 194 , 230 )(dd,du,dv)=( 63 , 35 , 30 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 320 , 133 , 834 )(dd,du,dv)=( 127 , 104 , 174 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 1024 , 148 , 222 )(dd,du,dv)=( 63 , 83 , 46 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 576 , 122 , 302 )(dd,du,dv)=( 127 , 84 , 138 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 384 , 190 , 638 )(dd,du,dv)=( 127 , 42 , 72 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 512 , 128 , 644 )(dd,du,dv)=( 191 , 50 , 162 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 896 , 131 , 290 )(dd,du,dv)=( 127 , 37 , 61 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 128 , 287 , 844 )(dd,du,dv)=( 63 , 5 , 5 ),Normal: 2 Direction: 0 EOM: 0
+ # patches 30
+ # resampled 1010478
+ # raw points 51690
+		 CC 0 -> 1491
+		 CC 1 -> 42
+		 CC 2 -> 32
+		 CC 3 -> 126
+		 CC 4 -> 8011
+		 CC 5 -> 130
+		 CC 6 -> 40
+		 CC 7 -> 294
+		 CC 8 -> 2836
+		 CC 9 -> 292
+		 CC 10 -> 49
+		 CC 11 -> 187
+		 CC 12 -> 185
+		 CC 13 -> 271
+		 CC 14 -> 3827
+		 CC 15 -> 116
+		 CC 16 -> 28191
+		 CC 17 -> 166
+		 CC 18 -> 61
+		 CC 19 -> 120
+		 CC 20 -> 123
+		 CC 21 -> 230
+		 CC 22 -> 377
+		 CC 23 -> 375
+		 CC 24 -> 130
+		 CC 25 -> 100
+		 CC 26 -> 1006
+ # CC 27
+		 Patch 30 ->(d1,u1,v1)=( 128 , 94 , 389 )(dd,du,dv)=( 127 , 40 , 60 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 31 ->(d1,u1,v1)=( 128 , 134 , 466 )(dd,du,dv)=( 63 , 7 , 5 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 128 , 140 , 489 )(dd,du,dv)=( 63 , 1 , 8 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 128 , 129 , 460 )(dd,du,dv)=( 63 , 10 , 9 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 320 , 194 , 122 )(dd,du,dv)=( 63 , 95 , 258 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 384 , 241 , 133 )(dd,du,dv)=( 127 , 29 , 7 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 256 , 273 , 173 )(dd,du,dv)=( 63 , 5 , 11 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 320 , 75 , 275 )(dd,du,dv)=( 63 , 10 , 37 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 384 , 87 , 318 )(dd,du,dv)=( 127 , 79 , 148 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 320 , 207 , 311 )(dd,du,dv)=( 63 , 9 , 32 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 320 , 212 , 375 )(dd,du,dv)=( 63 , 6 , 6 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 320 , 211 , 380 )(dd,du,dv)=( 63 , 4 , 28 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 320 , 238 , 392 )(dd,du,dv)=( 63 , 5 , 23 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 64 , 252 , 557 )(dd,du,dv)=( 63 , 17 , 17 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 128 , 134 , 528 )(dd,du,dv)=( 63 , 43 , 174 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 192 , 156 , 624 )(dd,du,dv)=( 63 , 7 , 9 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 256 , 150 , 634 )(dd,du,dv)=( 127 , 296 , 224 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 64 , 250 , 910 )(dd,du,dv)=( 127 , 12 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 192 , 139 , 908 )(dd,du,dv)=( 63 , 11 , 6 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 64 , 264 , 565 )(dd,du,dv)=( 63 , 14 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 64 , 280 , 601 )(dd,du,dv)=( 63 , 15 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 64 , 343 , 633 )(dd,du,dv)=( 127 , 20 , 14 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 384 , 187 , 515 )(dd,du,dv)=( 127 , 19 , 57 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 576 , 132 , 366 )(dd,du,dv)=( 63 , 17 , 16 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 256 , 320 , 620 )(dd,du,dv)=( 63 , 36 , 4 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 448 , 135 , 650 )(dd,du,dv)=( 63 , 9 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 320 , 146 , 871 )(dd,du,dv)=( 63 , 40 , 42 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 57
+ # resampled 1070640
+ # raw points 5134
+		 CC 0 -> 364
+		 CC 1 -> 115
+		 CC 2 -> 377
+		 CC 3 -> 722
+		 CC 4 -> 69
+		 CC 5 -> 66
+ # CC 6
+		 Patch 57 ->(d1,u1,v1)=( 128 , 96 , 391 )(dd,du,dv)=( 127 , 31 , 47 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 58 ->(d1,u1,v1)=( 320 , 209 , 128 )(dd,du,dv)=( 63 , 13 , 19 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 59 ->(d1,u1,v1)=( 320 , 262 , 248 )(dd,du,dv)=( 63 , 9 , 81 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 60 ->(d1,u1,v1)=( 320 , 94 , 337 )(dd,du,dv)=( 63 , 46 , 78 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 61 ->(d1,u1,v1)=( 64 , 258 , 558 )(dd,du,dv)=( 63 , 9 , 5 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 62 ->(d1,u1,v1)=( 320 , 175 , 901 )(dd,du,dv)=( 63 , 9 , 10 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 63
+ # resampled 1073012
+ # raw points 3449
+ # CC 0
+[done]
+
+============= FRAME 7 ============= 
+  Computing normals for original point cloud... [done]
+  Computing initial segmentation... [done]
+  Refining segmentation (grid-based)... [done]
+  Patch segmentation... 
+	 Computing adjacency info... [done]
+
+	 Extracting patches... 805029
+		 CC 0 -> 219563
+		 CC 1 -> 5471
+		 CC 2 -> 1870
+		 CC 3 -> 3645
+		 CC 4 -> 1462
+		 CC 5 -> 181628
+		 CC 6 -> 1381
+		 CC 7 -> 697
+		 CC 8 -> 844
+		 CC 9 -> 3881
+		 CC 10 -> 127977
+		 CC 11 -> 1449
+		 CC 12 -> 145959
+		 CC 13 -> 4962
+		 CC 14 -> 1498
+		 CC 15 -> 1625
+		 CC 16 -> 9342
+		 CC 17 -> 7261
+		 CC 18 -> 1008
+		 CC 19 -> 32
+		 CC 20 -> 3374
+		 CC 21 -> 17113
+		 CC 22 -> 8179
+		 CC 23 -> 897
+		 CC 24 -> 4539
+		 CC 25 -> 1161
+		 CC 26 -> 12144
+		 CC 27 -> 1689
+		 CC 28 -> 9713
+		 CC 29 -> 2642
+		 CC 30 -> 21941
+ # CC 31
+		 Patch 0 ->(d1,u1,v1)=( 64 , 10 , 14 )(dd,du,dv)=( 191 , 411 , 812 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 1 ->(d1,u1,v1)=( 0 , 214 , 10 )(dd,du,dv)=( 127 , 60 , 117 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 2 ->(d1,u1,v1)=( 0 , 92 , 238 )(dd,du,dv)=( 63 , 56 , 41 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 3 ->(d1,u1,v1)=( 192 , 233 , 11 )(dd,du,dv)=( 127 , 43 , 125 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 4 ->(d1,u1,v1)=( 64 , 6 , 234 )(dd,du,dv)=( 127 , 60 , 26 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 5 ->(d1,u1,v1)=( 384 , 9 , 13 )(dd,du,dv)=( 191 , 412 , 613 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 6 ->(d1,u1,v1)=( 64 , 184 , 254 )(dd,du,dv)=( 127 , 50 , 40 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 7 ->(d1,u1,v1)=( 0 , 239 , 140 )(dd,du,dv)=( 63 , 19 , 38 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 8 ->(d1,u1,v1)=( 128 , 105 , 232 )(dd,du,dv)=( 63 , 41 , 26 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 9 ->(d1,u1,v1)=( 0 , 323 , 235 )(dd,du,dv)=( 127 , 111 , 44 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 10 ->(d1,u1,v1)=( 448 , 149 , 50 )(dd,du,dv)=( 191 , 297 , 808 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 11 ->(d1,u1,v1)=( 64 , 402 , 238 )(dd,du,dv)=( 63 , 32 , 40 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 12 ->(d1,u1,v1)=( 0 , 119 , 282 )(dd,du,dv)=( 191 , 328 , 722 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 13 ->(d1,u1,v1)=( 320 , 273 , 126 )(dd,du,dv)=( 127 , 44 , 112 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 14 ->(d1,u1,v1)=( 256 , 249 , 137 )(dd,du,dv)=( 127 , 29 , 37 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 15 ->(d1,u1,v1)=( 128 , 280 , 306 )(dd,du,dv)=( 63 , 31 , 50 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 16 ->(d1,u1,v1)=( 192 , 126 , 562 )(dd,du,dv)=( 63 , 59 , 145 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 17 ->(d1,u1,v1)=( 320 , 71 , 560 )(dd,du,dv)=( 127 , 56 , 122 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 18 ->(d1,u1,v1)=( 192 , 140 , 574 )(dd,du,dv)=( 63 , 20 , 56 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 19 ->(d1,u1,v1)=( 128 , 181 , 585 )(dd,du,dv)=( 63 , 5 , 5 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 20 ->(d1,u1,v1)=( 896 , 145 , 149 )(dd,du,dv)=( 127 , 41 , 77 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 21 ->(d1,u1,v1)=( 192 , 153 , 842 )(dd,du,dv)=( 63 , 93 , 169 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 22 ->(d1,u1,v1)=( 256 , 214 , 856 )(dd,du,dv)=( 63 , 58 , 122 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 23 ->(d1,u1,v1)=( 832 , 202 , 230 )(dd,du,dv)=( 63 , 32 , 30 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 24 ->(d1,u1,v1)=( 1024 , 150 , 221 )(dd,du,dv)=( 63 , 87 , 47 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 25 ->(d1,u1,v1)=( 576 , 82 , 256 )(dd,du,dv)=( 63 , 36 , 44 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 26 ->(d1,u1,v1)=( 576 , 126 , 302 )(dd,du,dv)=( 127 , 87 , 133 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 27 ->(d1,u1,v1)=( 384 , 202 , 641 )(dd,du,dv)=( 127 , 35 , 45 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 28 ->(d1,u1,v1)=( 512 , 137 , 640 )(dd,du,dv)=( 191 , 55 , 163 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 29 ->(d1,u1,v1)=( 896 , 139 , 294 )(dd,du,dv)=( 127 , 38 , 62 ),Normal: 1 Direction: 1 EOM: 0
+		 Patch 30 ->(d1,u1,v1)=( 320 , 142 , 831 )(dd,du,dv)=( 63 , 101 , 175 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 31
+ # resampled 1013766
+ # raw points 45646
+		 CC 0 -> 152
+		 CC 1 -> 1494
+		 CC 2 -> 50
+		 CC 3 -> 151
+		 CC 4 -> 32
+		 CC 5 -> 67
+		 CC 6 -> 6254
+		 CC 7 -> 250
+		 CC 8 -> 159
+		 CC 9 -> 138
+		 CC 10 -> 144
+		 CC 11 -> 566
+		 CC 12 -> 2031
+		 CC 13 -> 695
+		 CC 14 -> 377
+		 CC 15 -> 307
+		 CC 16 -> 159
+		 CC 17 -> 244
+		 CC 18 -> 3422
+		 CC 19 -> 22714
+		 CC 20 -> 244
+		 CC 21 -> 169
+		 CC 22 -> 321
+		 CC 23 -> 225
+		 CC 24 -> 163
+		 CC 25 -> 93
+		 CC 26 -> 89
+		 CC 27 -> 72
+		 CC 28 -> 225
+		 CC 29 -> 145
+		 CC 30 -> 1286
+		 CC 31 -> 91
+		 CC 32 -> 42
+ # CC 33
+		 Patch 31 ->(d1,u1,v1)=( 0 , 237 , 332 )(dd,du,dv)=( 63 , 21 , 9 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 32 ->(d1,u1,v1)=( 128 , 95 , 379 )(dd,du,dv)=( 127 , 44 , 63 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 33 ->(d1,u1,v1)=( 128 , 148 , 475 )(dd,du,dv)=( 63 , 4 , 8 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 34 ->(d1,u1,v1)=( 128 , 147 , 485 )(dd,du,dv)=( 63 , 3 , 28 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 35 ->(d1,u1,v1)=( 128 , 138 , 462 )(dd,du,dv)=( 63 , 5 , 5 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 36 ->(d1,u1,v1)=( 128 , 174 , 442 )(dd,du,dv)=( 63 , 9 , 10 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 37 ->(d1,u1,v1)=( 320 , 226 , 125 )(dd,du,dv)=( 63 , 55 , 263 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 38 ->(d1,u1,v1)=( 320 , 31 , 208 )(dd,du,dv)=( 63 , 24 , 34 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 39 ->(d1,u1,v1)=( 384 , 243 , 131 )(dd,du,dv)=( 127 , 32 , 10 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 40 ->(d1,u1,v1)=( 320 , 385 , 40 )(dd,du,dv)=( 63 , 24 , 9 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 41 ->(d1,u1,v1)=( 320 , 58 , 251 )(dd,du,dv)=( 63 , 16 , 22 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 42 ->(d1,u1,v1)=( 320 , 71 , 275 )(dd,du,dv)=( 63 , 21 , 43 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 43 ->(d1,u1,v1)=( 384 , 105 , 342 )(dd,du,dv)=( 127 , 67 , 125 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 44 ->(d1,u1,v1)=( 320 , 217 , 350 )(dd,du,dv)=( 63 , 9 , 48 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 45 ->(d1,u1,v1)=( 320 , 210 , 344 )(dd,du,dv)=( 63 , 10 , 57 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 46 ->(d1,u1,v1)=( 320 , 239 , 355 )(dd,du,dv)=( 63 , 9 , 41 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 47 ->(d1,u1,v1)=( 64 , 151 , 616 )(dd,du,dv)=( 127 , 7 , 33 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 48 ->(d1,u1,v1)=( 128 , 168 , 524 )(dd,du,dv)=( 63 , 8 , 42 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 49 ->(d1,u1,v1)=( 128 , 140 , 567 )(dd,du,dv)=( 63 , 44 , 133 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 50 ->(d1,u1,v1)=( 256 , 150 , 638 )(dd,du,dv)=( 127 , 296 , 219 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 51 ->(d1,u1,v1)=( 128 , 251 , 908 )(dd,du,dv)=( 63 , 26 , 14 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 52 ->(d1,u1,v1)=( 64 , 256 , 562 )(dd,du,dv)=( 63 , 23 , 8 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 53 ->(d1,u1,v1)=( 64 , 337 , 634 )(dd,du,dv)=( 127 , 31 , 15 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 54 ->(d1,u1,v1)=( 384 , 196 , 521 )(dd,du,dv)=( 127 , 15 , 43 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 55 ->(d1,u1,v1)=( 64 , 278 , 600 )(dd,du,dv)=( 127 , 28 , 15 ),Normal: 2 Direction: 0 EOM: 0
+		 Patch 56 ->(d1,u1,v1)=( 576 , 187 , 331 )(dd,du,dv)=( 63 , 5 , 18 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 57 ->(d1,u1,v1)=( 576 , 144 , 341 )(dd,du,dv)=( 63 , 18 , 16 ),Normal: 1 Direction: 0 EOM: 0
+		 Patch 58 ->(d1,u1,v1)=( 256 , 327 , 620 )(dd,du,dv)=( 63 , 25 , 2 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 59 ->(d1,u1,v1)=( 256 , 334 , 632 )(dd,du,dv)=( 63 , 21 , 10 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 60 ->(d1,u1,v1)=( 448 , 144 , 645 )(dd,du,dv)=( 63 , 11 , 13 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 61 ->(d1,u1,v1)=( 320 , 165 , 863 )(dd,du,dv)=( 63 , 37 , 58 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 62 ->(d1,u1,v1)=( 320 , 160 , 895 )(dd,du,dv)=( 63 , 7 , 7 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 63 ->(d1,u1,v1)=( 320 , 197 , 909 )(dd,du,dv)=( 63 , 6 , 8 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 64
+ # resampled 1064224
+ # raw points 5417
+		 CC 0 -> 373
+		 CC 1 -> 510
+		 CC 2 -> 497
+		 CC 3 -> 95
+		 CC 4 -> 84
+ # CC 5
+		 Patch 64 ->(d1,u1,v1)=( 192 , 98 , 382 )(dd,du,dv)=( 63 , 33 , 49 ),Normal: 0 Direction: 0 EOM: 0
+		 Patch 65 ->(d1,u1,v1)=( 320 , 265 , 231 )(dd,du,dv)=( 63 , 8 , 121 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 66 ->(d1,u1,v1)=( 320 , 109 , 355 )(dd,du,dv)=( 63 , 40 , 65 ),Normal: 0 Direction: 1 EOM: 0
+		 Patch 67 ->(d1,u1,v1)=( 256 , 334 , 632 )(dd,du,dv)=( 63 , 19 , 10 ),Normal: 2 Direction: 1 EOM: 0
+		 Patch 68 ->(d1,u1,v1)=( 320 , 185 , 902 )(dd,du,dv)=( 63 , 10 , 16 ),Normal: 0 Direction: 1 EOM: 0
+ # patches 69
+ # resampled 1066178
+ # raw points 3891
+ # CC 0
+[done]
+pointLocalReconstruction = 0 / 0 
+CODEC ID SET = occupancy: 4 geometry: 4 attributes: 4 
+CODEC ID SET = occupancy: 1 geometry: 1 attributes[0]: 1 
+frame 0 tile 0 packFlexible: actualImageSize 1280 x 1120
+frame 1 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1136
+frame 2 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1136
+frame 3 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1152
+frame 4 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1168
+frame 5 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1168
+frame 6 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1200
+frame 7 tile 0 spatialConsistencyPackFlexible: actualImageSize 1280 x 1200
+	->tile 0 ImageSize 1280 x 1280
+GPA starts : tile[0]
+	GPA for [-1~-1) Tile [0] Frame[0] initial size:1280x1280
+	New subContext:[0,1)
+	packingFirstFrame: actualImageSize 1280 x 1120
+	GPA for [-1~-1) Tile [0] Frame[1] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1136
+	The endSubContext is: 0=(0||0||0)
+	The frame 1 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[2] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1136
+	The endSubContext is: 0=(0||0||0)
+	The frame 2 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[3] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1152
+	The endSubContext is: 0=(0||0||0)
+	The frame 3 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[4] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1168
+	The endSubContext is: 0=(0||0||0)
+	The frame 4 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[5] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1168
+	The endSubContext is: 0=(0||0||0)
+	The frame 5 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[6] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1200
+	The endSubContext is: 0=(0||0||0)
+	The frame 6 is not a end point ---
+	cleared current tried infor:
+	GPA for [-1~-1) Tile [0] Frame[7] initial size:1280x1280
+	unionPatchPacking: actualImageSize 1280 x 1200
+	The endSubContext is: 0=(0||0||0)
+	The frame 7 is not a end point ---
+	cleared current tried infor:
+	This is the last frame.......
+The subContext is: [0, 8)
+	frameIndex:0 tileIndex:0 patchCount:54 frame.getGlobalPatchCount() = 22
+	frameIndex:1 tileIndex:0 patchCount:65 frame.getGlobalPatchCount() = 22
+	frameIndex:2 tileIndex:0 patchCount:56 frame.getGlobalPatchCount() = 22
+	frameIndex:3 tileIndex:0 patchCount:59 frame.getGlobalPatchCount() = 22
+	frameIndex:4 tileIndex:0 patchCount:61 frame.getGlobalPatchCount() = 22
+	frameIndex:5 tileIndex:0 patchCount:59 frame.getGlobalPatchCount() = 22
+	frameIndex:6 tileIndex:0 patchCount:63 frame.getGlobalPatchCount() = 22
+	frameIndex:7 tileIndex:0 patchCount:69 frame.getGlobalPatchCount() = 22
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[0:22/54, -1] 	[0:23/54, -1] 	[0:24/54, -1] 	[0:25/54, -1] 	[0:26/54, -1] 	[0:27/54, -1] 	[0:28/54, -1] 	[0:29/54, -1] 	[0:30/54, -1] 	[0:31/54, -1] 	[0:32/54, -1] 	[0:33/54, -1] 	[0:34/54, -1] 	[0:35/54, -1] 	[0:36/54, -1] 	[0:37/54, -1] 	[0:38/54, -1] 	[0:39/54, -1] 	[0:40/54, -1] 	[0:41/54, -1] 	[0:42/54, -1] 	[0:43/54, -1] 	[0:44/54, -1] 	[0:45/54, -1] 	[0:46/54, -1] 	[0:47/54, -1] 	[0:48/54, -1] 	[0:49/54, -1] 	[0:50/54, -1] 	[0:51/54, -1] 	[0:52/54, -1] 	[0:53/54, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[1:22/65, 22] 	[1:23/65, 23] 	[1:24/65, 24] 	[1:25/65, 25] 	[1:26/65, 26] 	[1:27/65, 31] 	[1:28/65, 32] 	[1:29/65, 38] 	[1:30/65, 39] 	[1:31/65, 40] 	[1:32/65, 42] 	[1:33/65, 43] 	[1:34/65, 44] 	[1:35/65, 45] 	[1:36/65, 49] 	[1:37/65, 52] 	[1:38/65, -1] 	[1:39/65, -1] 	[1:40/65, -1] 	[1:41/65, -1] 	[1:42/65, -1] 	[1:43/65, -1] 	[1:44/65, -1] 	[1:45/65, -1] 	[1:46/65, -1] 	[1:47/65, -1] 	[1:48/65, -1] 	[1:49/65, -1] 	[1:50/65, -1] 	[1:51/65, -1] 	[1:52/65, -1] 	[1:53/65, -1] 	[1:54/65, -1] 	[1:55/65, -1] 	[1:56/65, -1] 	[1:57/65, -1] 	[1:58/65, -1] 	[1:59/65, -1] 	[1:60/65, -1] 	[1:61/65, -1] 	[1:62/65, -1] 	[1:63/65, -1] 	[1:64/65, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[2:22/56, 23] 	[2:23/56, 24] 	[2:24/56, 25] 	[2:25/56, 26] 	[2:26/56, 27] 	[2:27/56, 29] 	[2:28/56, 30] 	[2:29/56, 32] 	[2:30/56, 33] 	[2:31/56, 34] 	[2:32/56, 35] 	[2:33/56, 38] 	[2:34/56, 39] 	[2:35/56, 40] 	[2:36/56, 43] 	[2:37/56, 44] 	[2:38/56, 48] 	[2:39/56, 61] 	[2:40/56, -1] 	[2:41/56, -1] 	[2:42/56, -1] 	[2:43/56, -1] 	[2:44/56, -1] 	[2:45/56, -1] 	[2:46/56, -1] 	[2:47/56, -1] 	[2:48/56, -1] 	[2:49/56, -1] 	[2:50/56, -1] 	[2:51/56, -1] 	[2:52/56, -1] 	[2:53/56, -1] 	[2:54/56, -1] 	[2:55/56, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[3:22/59, 22] 	[3:23/59, 23] 	[3:24/59, 24] 	[3:25/59, 26] 	[3:26/59, 27] 	[3:27/59, 28] 	[3:28/59, 31] 	[3:29/59, 37] 	[3:30/59, 38] 	[3:31/59, 39] 	[3:32/59, 40] 	[3:33/59, 46] 	[3:34/59, 52] 	[3:35/59, -1] 	[3:36/59, -1] 	[3:37/59, -1] 	[3:38/59, -1] 	[3:39/59, -1] 	[3:40/59, -1] 	[3:41/59, -1] 	[3:42/59, -1] 	[3:43/59, -1] 	[3:44/59, -1] 	[3:45/59, -1] 	[3:46/59, -1] 	[3:47/59, -1] 	[3:48/59, -1] 	[3:49/59, -1] 	[3:50/59, -1] 	[3:51/59, -1] 	[3:52/59, -1] 	[3:53/59, -1] 	[3:54/59, -1] 	[3:55/59, -1] 	[3:56/59, -1] 	[3:57/59, -1] 	[3:58/59, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[4:22/61, 22] 	[4:23/61, 23] 	[4:24/61, 25] 	[4:25/61, 26] 	[4:26/61, 28] 	[4:27/61, 31] 	[4:28/61, 32] 	[4:29/61, 35] 	[4:30/61, 37] 	[4:31/61, 38] 	[4:32/61, 39] 	[4:33/61, 40] 	[4:34/61, 42] 	[4:35/61, 55] 	[4:36/61, -1] 	[4:37/61, -1] 	[4:38/61, -1] 	[4:39/61, -1] 	[4:40/61, -1] 	[4:41/61, -1] 	[4:42/61, -1] 	[4:43/61, -1] 	[4:44/61, -1] 	[4:45/61, -1] 	[4:46/61, -1] 	[4:47/61, -1] 	[4:48/61, -1] 	[4:49/61, -1] 	[4:50/61, -1] 	[4:51/61, -1] 	[4:52/61, -1] 	[4:53/61, -1] 	[4:54/61, -1] 	[4:55/61, -1] 	[4:56/61, -1] 	[4:57/61, -1] 	[4:58/61, -1] 	[4:59/61, -1] 	[4:60/61, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[5:22/59, 22] 	[5:23/59, 25] 	[5:24/59, 27] 	[5:25/59, 28] 	[5:26/59, 29] 	[5:27/59, 30] 	[5:28/59, 31] 	[5:29/59, 33] 	[5:30/59, 36] 	[5:31/59, 37] 	[5:32/59, 46] 	[5:33/59, 51] 	[5:34/59, 56] 	[5:35/59, 58] 	[5:36/59, 60] 	[5:37/59, -1] 	[5:38/59, -1] 	[5:39/59, -1] 	[5:40/59, -1] 	[5:41/59, -1] 	[5:42/59, -1] 	[5:43/59, -1] 	[5:44/59, -1] 	[5:45/59, -1] 	[5:46/59, -1] 	[5:47/59, -1] 	[5:48/59, -1] 	[5:49/59, -1] 	[5:50/59, -1] 	[5:51/59, -1] 	[5:52/59, -1] 	[5:53/59, -1] 	[5:54/59, -1] 	[5:55/59, -1] 	[5:56/59, -1] 	[5:57/59, -1] 	[5:58/59, -1] 
+	reference Patch Idx[frame:patchIdx/patchCout,referencePatchIdx] :
+	[6:22/63, 24] 	[6:23/63, 25] 	[6:24/63, 26] 	[6:25/63, 27] 	[6:26/63, 28] 	[6:27/63, 30] 	[6:28/63, 31] 	[6:29/63, 34] 	[6:30/63, 35] 	[6:31/63, 37] 	[6:32/63, 38] 	[6:33/63, 39] 	[6:34/63, 40] 	[6:35/63, 41] 	[6:36/63, -1] 	[6:37/63, -1] 	[6:38/63, -1] 	[6:39/63, -1] 	[6:40/63, -1] 	[6:41/63, -1] 	[6:42/63, -1] 	[6:43/63, -1] 	[6:44/63, -1] 	[6:45/63, -1] 	[6:46/63, -1] 	[6:47/63, -1] 	[6:48/63, -1] 	[6:49/63, -1] 	[6:50/63, -1] 	[6:51/63, -1] 	[6:52/63, -1] 	[6:53/63, -1] 	[6:54/63, -1] 	[6:55/63, -1] 	[6:56/63, -1] 	[6:57/63, -1] 	[6:58/63, -1] 	[6:59/63, -1] 	[6:60/63, -1] 	[6:61/63, -1] 	[6:62/63, -1] 
+
+	-->after GPA	tile 0 ImageSize 1280 x 1280
+resizeGeometryVideo 
+generateOccupancyMap frame 0: entireFrameSize:1280x1280
+generateOccupancyMap frame 1: entireFrameSize:1280x1280
+generateOccupancyMap frame 2: entireFrameSize:1280x1280
+generateOccupancyMap frame 3: entireFrameSize:1280x1280
+generateOccupancyMap frame 4: entireFrameSize:1280x1280
+generateOccupancyMap frame 5: entireFrameSize:1280x1280
+generateOccupancyMap frame 6: entireFrameSize:1280x1280
+generateOccupancyMap frame 7: entireFrameSize:1280x1280
+Encoder convert : write420 without conversion: ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy_320x320_8bit_p420.yuv 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Encode: video size = 320 x 320 num frames = 8 
+HMEncoder -c cfg/hm/ctc-hm-occupancy-map-ld-main10.cfg --InputFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy_320x320_8bit_p420.yuv --InputBitDepth=8 --InputChromaFormat=420 --OutputBitDepth=8 --OutputBitDepthC=8 --FrameRate=30 --FrameSkip=0 --SourceWidth=320 --SourceHeight=320 --ConformanceWindowMode=1  --FramesToBeEncoded=8 --BitstreamFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.bin --ReconFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy_rec_320x320_8bit_p420.yuv --QP=8 --InternalBitDepth=8 --InternalBitDepthC=8
+******************************************************************
+** WARNING: --SEIDecodedPictureHash is now disabled by default. **
+**          Automatic verification of decoded pictures by a     **
+**          decoder requires this option to be enabled.         **
+******************************************************************
+****************************************************************************
+** WARNING: --HadamardME has been disabled due to the enabling of         **
+**          --CUTransquantBypassFlagForce                                 **
+****************************************************************************
+****************************************************************************
+** WARNING: --CUNoSplitIntraACT has been disabled                         **
+**  due to the disabling of --ColourTransform                             **
+****************************************************************************
+longdress_r1_CTU64_RA_GOF0_occupancy_320x320_8bit_p420
+
+Input          File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy_320x320_8bit_p420.yuv
+Bitstream      File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.bin
+Reconstruction File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy_rec_320x320_8bit_p420.yuv
+PCCExt                                 : Disabled
+Real     Format                        : 320x320 30Hz
+Internal Format                        : 320x320 30Hz
+Sequence PSNR output                   : Linear average only
+Sequence MSE output                    : Disabled
+Frame MSE output                       : Disabled
+Print Clipped PSNR                     : Disabled
+MS-SSIM output                         : Disabled
+xPSNR calculation                      : Disabled
+Cabac-zero-word-padding                : Enabled
+Frame/Field                            : Frame based coding
+Frame index                            : 0 - 7 (8 frames)
+Profile                                : main10
+CU size / depth / total-depth          : 64 / 4 / 4
+RQT trans. size (min / max)            : 4 / 32
+Max RQT depth inter                    : 1
+Max RQT depth intra                    : 1
+Min PCM size                           : 8
+Motion search range                    : 512
+Intra period                           : -1
+Decoding refresh type                  : 2
+QP                                     : 8
+Max dQP signaling depth                : 0
+Cb QP Offset                           : 0
+Cr QP Offset                           : 0
+QP adaptation                          : 0 (range=0)
+GOP size                               : 1
+Input bit depth                        : (Y:8, C:8)
+MSB-extended bit depth                 : (Y:8, C:8)
+Internal bit depth                     : (Y:8, C:8)
+PCM sample bit depth                   : (Y:8, C:8)
+Intra reference smoothing              : Enabled
+diff_cu_chroma_qp_offset_depth         : -1
+extended_precision_processing_flag     : Disabled
+implicit_rdpcm_enabled_flag            : Disabled
+explicit_rdpcm_enabled_flag            : Disabled
+transform_skip_rotation_enabled_flag   : Disabled
+transform_skip_context_enabled_flag    : Disabled
+cross_component_prediction_enabled_flag: Disabled
+high_precision_offsets_enabled_flag    : Disabled
+persistent_rice_adaptation_enabled_flag: Disabled
+cabac_bypass_alignment_enabled_flag    : Disabled
+Intra block copying                    : Disabled
+Adaptive colour transform              : Disabled
+Palette mode                           : Disabled
+Cost function:                         : Sequence_level_lossless coding
+Motion Estimation                      : Diamond search
+HashME                                 : 0
+RateControl                            : 0
+WPMethod                               : 0
+Max Num Merge Candidates               : 5
+
+TOOL CFG: IBD:0 HAD:0 RDQ:1 RDQTS:1 RDpenalty:0 LQP:0 SQP:0 ASR:0 MinSearchWindow:8 RestrictMESampling:0 FEN:1 ECU:0 FDM:1 CFM:0 ESD:0 RQT:1 TransformSkip:1 TransformSkipFast:1 TransformSkipLog2MaxSize:2 Slice: M=0 SliceSegment: M=0 CIP:0 SAO:0 PCM:0 TransQuantBypassEnabled: =1WPP:0 WPB:0 PME:2  WaveFrontSynchro:0 WaveFrontSubstreams:1 ScalingList:0 TMVPMode:1 AQpS:0 SignBitHidingFlag:1 RecalQP:0TransQuantBypassInferTUSplit:0 CUNoSplitIntraACT:0  MvResControl:0
+
+                   Input ChromaFormatIDC =   4:2:0
+       Output (internal) ChromaFormatIDC =   4:2:0
+
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    0 TId: 0 ( I-SLICE, nQP 8 QP 8 )      16160 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     0 ] [L0 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    1 TId: 0 ( P-SLICE, nQP 10 QP 10 )      10544 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 0 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    2 TId: 0 ( P-SLICE, nQP 10 QP 10 )      10768 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 1 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    3 TId: 0 ( P-SLICE, nQP 10 QP 10 )      11256 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 2 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    4 TId: 0 ( P-SLICE, nQP 10 QP 10 )      11688 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 3 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    5 TId: 0 ( P-SLICE, nQP 10 QP 10 )      12856 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 4 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    6 TId: 0 ( P-SLICE, nQP 10 QP 10 )      12360 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 5 ] [L1 ]
+copy image from PCC: Shift = 0 ( 320x 320 =>  320x 320 S= 480 C:  160x 160 ) 
+POC    7 TId: 0 ( P-SLICE, nQP 10 QP 10 )      13456 bits [Y 999.9900 dB    U 999.9900 dB    V 999.9900 dB] [ET     1 ] [L0 6 ] [L1 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        8    a     371.5800  999.9900  999.9900  999.9900  999.9900  
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        1    i     484.8000  999.9900  999.9900  999.9900  999.9900  
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        7    p     355.4057  999.9900  999.9900  999.9900  999.9900  
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        0    b         -nan      -nan      -nan      -nan      -nan  
+
+RVM: 0.000
+Bytes written to file: 12386 (371.580 kbps)
+
+HMEncoder Total Time:        4.355 sec.
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Image write 320x320 T = 1 nbyte = 1 color format = 3 channel size = 102400 25600 25600 
+Encoder convert : write420 without conversion: ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry_1280x1280_8bit_p420.yuv 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Encode: video size = 1280 x 1280 num frames = 16 
+HMEncoder -c cfg/hm/ctc-hm-geometry-ra.cfg --InputFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry_1280x1280_8bit_p420.yuv --InputBitDepth=8 --InputChromaFormat=420 --OutputBitDepth=8 --OutputBitDepthC=8 --FrameRate=30 --FrameSkip=0 --SourceWidth=1280 --SourceHeight=1280 --ConformanceWindowMode=1  --FramesToBeEncoded=16 --BitstreamFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry.bin --ReconFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry_rec_1280x1280_8bit_p420.yuv --QP=32 --InternalBitDepth=10 --InternalBitDepthC=10 --UsePccMotionEstimation=1 --BlockToPatchFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_blockToPatch.txt --OccupancyMapFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.txt --PatchInfoFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_patchInfo.txt
+****************************************************************************
+** WARNING: --CUNoSplitIntraACT has been disabled                         **
+**  due to the disabling of --ColourTransform                             **
+****************************************************************************
+longdress_r1_CTU64_RA_GOF0_geometry_1280x1280_8bit_p420
+
+Input          File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry_1280x1280_8bit_p420.yuv
+Bitstream      File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry.bin
+Reconstruction File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_geometry_rec_1280x1280_8bit_p420.yuv
+PCCExt                                 : Enabled
+BlockToPatch   File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_blockToPatch.txt
+OccupancyMap   File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.txt
+PatchInfo      File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_patchInfo.txt
+Real     Format                        : 1280x1280 30Hz
+Internal Format                        : 1280x1280 30Hz
+Sequence PSNR output                   : Linear average only
+Sequence MSE output                    : Disabled
+Frame MSE output                       : Disabled
+Print Clipped PSNR                     : Disabled
+MS-SSIM output                         : Disabled
+xPSNR calculation                      : Disabled
+Cabac-zero-word-padding                : Enabled
+Frame/Field                            : Frame based coding
+Frame index                            : 0 - 15 (16 frames)
+Profile                                : main10
+CU size / depth / total-depth          : 64 / 4 / 4
+RQT trans. size (min / max)            : 4 / 32
+Max RQT depth inter                    : 3
+Max RQT depth intra                    : 3
+Min PCM size                           : 8
+Motion search range                    : 64
+Intra period                           : -1
+Decoding refresh type                  : 2
+QP                                     : 32
+Max dQP signaling depth                : 0
+Cb QP Offset                           : 0
+Cr QP Offset                           : 0
+QP adaptation                          : 0 (range=0)
+GOP size                               : 16
+Input bit depth                        : (Y:8, C:8)
+MSB-extended bit depth                 : (Y:8, C:8)
+Internal bit depth                     : (Y:10, C:10)
+PCM sample bit depth                   : (Y:8, C:8)
+Intra reference smoothing              : Enabled
+diff_cu_chroma_qp_offset_depth         : -1
+extended_precision_processing_flag     : Disabled
+implicit_rdpcm_enabled_flag            : Disabled
+explicit_rdpcm_enabled_flag            : Disabled
+transform_skip_rotation_enabled_flag   : Disabled
+transform_skip_context_enabled_flag    : Disabled
+cross_component_prediction_enabled_flag: Disabled
+high_precision_offsets_enabled_flag    : Disabled
+persistent_rice_adaptation_enabled_flag: Disabled
+cabac_bypass_alignment_enabled_flag    : Disabled
+Intra block copying                    : Disabled
+Adaptive colour transform              : Disabled
+Palette mode                           : Disabled
+log2_sao_offset_scale_luma             : 0
+log2_sao_offset_scale_chroma           : 0
+Cost function:                         : Lossy coding (default)
+Motion Estimation                      : Diamond search
+HashME                                 : 0
+RateControl                            : 0
+WPMethod                               : 0
+Max Num Merge Candidates               : 5
+
+TOOL CFG: IBD:1 HAD:1 RDQ:1 RDQTS:1 RDpenalty:0 LQP:0 SQP:0 ASR:0 MinSearchWindow:8 RestrictMESampling:0 FEN:1 ECU:0 FDM:1 CFM:0 ESD:0 RQT:1 TransformSkip:1 TransformSkipFast:1 TransformSkipLog2MaxSize:2 Slice: M=0 SliceSegment: M=0 CIP:0 SAO:1 PCM:0 TransQuantBypassEnabled:0 WPP:0 WPB:0 PME:2  WaveFrontSynchro:0 WaveFrontSubstreams:1 ScalingList:0 TMVPMode:1 AQpS:0 SignBitHidingFlag:1 RecalQP:0TransQuantBypassInferTUSplit:0 CUNoSplitIntraACT:0  MvResControl:0
+
+
+Reading the aux info files
+                   Input ChromaFormatIDC =   4:2:0
+       Output (internal) ChromaFormatIDC =   4:2:0
+
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+
+	PCC ME GOP #1 ACTIVE
+POC    0 TId: 0 ( I-SLICE, nQP 31 QP 31 )      26640 bits [Y 49.0149 dB    U 54.1514 dB    V 54.1514 dB] [ET     8 ] [L0 ] [L1 ] [MD5:b87e357333307a7d377a3e49f547e514,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+
+	PCC ME GOP #1 ACTIVE
+POC    8 TId: 1 ( B-SLICE, nQP 32 QP 32 )      24440 bits [Y 47.8647 dB    U 54.1514 dB    V 54.1514 dB] [ET    30 ] [L0 0 ] [L1 0 ] [MD5:2bdea7a0699bd1b9f8791dc1bcbff445,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    4 TId: 2 ( B-SLICE, nQP 32 QP 32 )      21088 bits [Y 48.1436 dB    U 54.1514 dB    V 54.1514 dB] [ET    34 ] [L0 0 8 ] [L1 8 0 ] [MD5:5095d573fd24e78cd3e05f7d3ce465b9,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    2 TId: 3 ( B-SLICE, nQP 32 QP 32 )      16272 bits [Y 48.2843 dB    U 54.1514 dB    V 54.1514 dB] [ET    33 ] [L0 0 4 ] [L1 4 8 ] [MD5:134da51cc2af293265d5b2f4207b951d,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    1 TId: 4 ( B-SLICE, nQP 32 QP 32 )       2200 bits [Y 48.5348 dB    U 54.1514 dB    V 54.1514 dB] [ET    27 ] [L0 0 2 ] [L1 2 4 ] [MD5:210dbed11cb827c8b3139629de95eeea,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    3 TId: 4 ( B-SLICE, nQP 32 QP 32 )       3536 bits [Y 48.0546 dB    U 54.1514 dB    V 54.1514 dB] [ET    31 ] [L0 2 0 ] [L1 4 8 ] [MD5:a531bb21ead2ad116c650f37bd3dfa0c,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    6 TId: 3 ( B-SLICE, nQP 32 QP 32 )      16496 bits [Y 48.1599 dB    U 54.1514 dB    V 54.1514 dB] [ET    36 ] [L0 4 0 ] [L1 8 4 ] [MD5:f3dbda5b465e1a55ca2ead829307e61d,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    5 TId: 4 ( B-SLICE, nQP 32 QP 32 )       3704 bits [Y 47.9352 dB    U 54.1514 dB    V 54.1514 dB] [ET    32 ] [L0 4 0 ] [L1 6 8 ] [MD5:6d7ff649822f753d5ffb23aa284b90ac,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    7 TId: 4 ( B-SLICE, nQP 32 QP 32 )       4040 bits [Y 48.0097 dB    U 54.1514 dB    V 54.1514 dB] [ET    28 ] [L0 6 4 ] [L1 8 6 ] [MD5:03b09ed9210c12eade6a1efa508afb84,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   12 TId: 2 ( B-SLICE, nQP 32 QP 32 )      24720 bits [Y 48.0105 dB    U 54.1514 dB    V 54.1514 dB] [ET    37 ] [L0 8 0 ] [L1 8 0 ] [MD5:259cff7855792bbc0c9667bab58d6066,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   10 TId: 3 ( B-SLICE, nQP 32 QP 32 )      19072 bits [Y 47.8472 dB    U 54.1514 dB    V 54.1514 dB] [ET    34 ] [L0 8 0 ] [L1 12 8 ] [MD5:76de1ec9cdce308ec598c56f703432b5,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC    9 TId: 4 ( B-SLICE, nQP 32 QP 32 )       4528 bits [Y 47.7178 dB    U 54.1514 dB    V 54.1514 dB] [ET    33 ] [L0 8 0 ] [L1 10 12 ] [MD5:3557ed4d4403c0c8fc347e64fdb5ed11,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   11 TId: 4 ( B-SLICE, nQP 32 QP 32 )       4000 bits [Y 47.6114 dB    U 54.1514 dB    V 54.1514 dB] [ET    27 ] [L0 10 8 ] [L1 12 10 ] [MD5:e461a0243fe5a8ea994fe9076d8f0817,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   14 TId: 3 ( B-SLICE, nQP 32 QP 32 )      23160 bits [Y 47.5095 dB    U 54.1514 dB    V 54.1514 dB] [ET    36 ] [L0 12 8 ] [L1 12 8 ] [MD5:73c4a8ce2c9f094c4ab4de43a05c09fb,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   13 TId: 4 ( B-SLICE, nQP 32 QP 32 )       3000 bits [Y 47.7128 dB    U 54.1514 dB    V 54.1514 dB] [ET    28 ] [L0 12 8 ] [L1 14 12 ] [MD5:a38ac54d73fa20c51102ce3b394247f4,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+POC   15 TId: 4 ( B-SLICE, nQP 32 QP 32 )       4368 bits [Y 47.3012 dB    U 54.1514 dB    V 54.1514 dB] [ET    23 ] [L0 14 12 ] [L1 14 12 ] [MD5:b3c5d4247776b1af0ba357812bfd4ebc,9b624365391fba58ff74a6b275867578,9b624365391fba58ff74a6b275867578]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	       16    a     377.3700   47.9820   54.1514   54.1514   49.2318  
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        1    i     799.2000   49.0149   54.1514   54.1514   50.1567  
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        0    p         -nan      -nan      -nan      -nan      -nan  
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	       15    b     349.2480   47.9131   54.1514   54.1514   49.1766  
+
+RVM: 0.000
+Bytes written to file: 26070 (391.050 kbps)
+
+HMEncoder Total Time:      476.798 sec.
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+sizeGeometryVideo: 26087
+****TileInfo***Summary******************
+frame 0 tile 0: (0,0) (1280x1280) patchCount:54 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 1 tile 0: (0,0) (1280x1280) patchCount:65 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 2 tile 0: (0,0) (1280x1280) patchCount:56 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 3 tile 0: (0,0) (1280x1280) patchCount:59 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 4 tile 0: (0,0) (1280x1280) patchCount:61 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 5 tile 0: (0,0) (1280x1280) patchCount:59 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 6 tile 0: (0,0) (1280x1280) patchCount:63 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+frame 7 tile 0: (0,0) (1280x1280) patchCount:69 regPoints:0, rawPatch:0 rawPoints:0 eomPatch:0 eomPoints:0
+*********************************************
+Alloc One layer deata 
+generatePointCloud pbfEnableFlag_ = 0 
+frame 0, tile 0: regularPoints 692456
+frame 0, tile 0: regularPoints+eomPoints 692456
+frame 0, tile 0: regularPoints+eomPoints+rawPoints 692456
+generatePointCloud pbfEnableFlag_ = 0 
+frame 1, tile 0: regularPoints 732405
+frame 1, tile 0: regularPoints+eomPoints 732405
+frame 1, tile 0: regularPoints+eomPoints+rawPoints 732405
+generatePointCloud pbfEnableFlag_ = 0 
+frame 2, tile 0: regularPoints 738533
+frame 2, tile 0: regularPoints+eomPoints 738533
+frame 2, tile 0: regularPoints+eomPoints+rawPoints 738533
+generatePointCloud pbfEnableFlag_ = 0 
+frame 3, tile 0: regularPoints 750653
+frame 3, tile 0: regularPoints+eomPoints 750653
+frame 3, tile 0: regularPoints+eomPoints+rawPoints 750653
+generatePointCloud pbfEnableFlag_ = 0 
+frame 4, tile 0: regularPoints 764542
+frame 4, tile 0: regularPoints+eomPoints 764542
+frame 4, tile 0: regularPoints+eomPoints+rawPoints 764542
+generatePointCloud pbfEnableFlag_ = 0 
+frame 5, tile 0: regularPoints 741695
+frame 5, tile 0: regularPoints+eomPoints 741695
+frame 5, tile 0: regularPoints+eomPoints+rawPoints 741695
+generatePointCloud pbfEnableFlag_ = 0 
+frame 6, tile 0: regularPoints 744112
+frame 6, tile 0: regularPoints+eomPoints 744112
+frame 6, tile 0: regularPoints+eomPoints+rawPoints 744112
+generatePointCloud pbfEnableFlag_ = 0 
+frame 7, tile 0: regularPoints 753822
+frame 7, tile 0: regularPoints+eomPoints 753822
+frame 7, tile 0: regularPoints+eomPoints+rawPoints 753822
+Attribute Coding starts
+transferColors 
+transferColors 
+transferColors 
+transferColors 
+transferColors 
+transferColors 
+transferColors 
+transferColors 
+Processing time (Padding [T0T1]0/8): 0.564 s
+Processing time (Padding [T0T1]1/8): 0.553 s
+Processing time (Padding [T0T1]2/8): 0.551 s
+Processing time (Padding [T0T1]3/8): 0.553 s
+Processing time (Padding [T0T1]4/8): 0.543 s
+Processing time (Padding [T0T1]5/8): 0.538 s
+Processing time (Padding [T0T1]6/8): 0.551 s
+Processing time (Padding [T0T1]7/8): 0.549 s
+attribute video 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 1 channel size = 1638400 1638400 1638400 
+Unknown parameter <UseAdaptiveFiltering>
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Encode: video size = 1280 x 1280 num frames = 16 
+HMEncoder -c cfg/hm/ctc-hm-attribute-ra.cfg --InputFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute_1280x1280_8bit_p420.yuv --InputBitDepth=8 --InputChromaFormat=420 --OutputBitDepth=8 --OutputBitDepthC=8 --FrameRate=30 --FrameSkip=0 --SourceWidth=1280 --SourceHeight=1280 --ConformanceWindowMode=1  --FramesToBeEncoded=16 --BitstreamFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute.bin --ReconFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute_rec_1280x1280_8bit_p420.yuv --QP=42 --InternalBitDepth=10 --InternalBitDepthC=10 --UsePccMotionEstimation=1 --BlockToPatchFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_blockToPatch.txt --OccupancyMapFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.txt --PatchInfoFile=./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_patchInfo.txt
+****************************************************************************
+** WARNING: --CUNoSplitIntraACT has been disabled                         **
+**  due to the disabling of --ColourTransform                             **
+****************************************************************************
+longdress_r1_CTU64_RA_GOF0_attribute_1280x1280_8bit_p420
+
+Input          File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute_1280x1280_8bit_p420.yuv
+Bitstream      File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute.bin
+Reconstruction File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_attribute_rec_1280x1280_8bit_p420.yuv
+PCCExt                                 : Enabled
+BlockToPatch   File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_blockToPatch.txt
+OccupancyMap   File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_occupancy.txt
+PatchInfo      File                    : ./out/bin/longdress/longdress_r1_CTU64_RA_GOF0_patchInfo.txt
+Real     Format                        : 1280x1280 30Hz
+Internal Format                        : 1280x1280 30Hz
+Sequence PSNR output                   : Linear average only
+Sequence MSE output                    : Disabled
+Frame MSE output                       : Disabled
+Print Clipped PSNR                     : Disabled
+MS-SSIM output                         : Disabled
+xPSNR calculation                      : Disabled
+Cabac-zero-word-padding                : Enabled
+Frame/Field                            : Frame based coding
+Frame index                            : 0 - 15 (16 frames)
+Profile                                : main10
+CU size / depth / total-depth          : 64 / 4 / 4
+RQT trans. size (min / max)            : 4 / 32
+Max RQT depth inter                    : 3
+Max RQT depth intra                    : 3
+Min PCM size                           : 8
+Motion search range                    : 64
+Intra period                           : -1
+Decoding refresh type                  : 2
+QP                                     : 42
+Max dQP signaling depth                : 0
+Cb QP Offset                           : 0
+Cr QP Offset                           : 0
+QP adaptation                          : 0 (range=0)
+GOP size                               : 16
+Input bit depth                        : (Y:8, C:8)
+MSB-extended bit depth                 : (Y:8, C:8)
+Internal bit depth                     : (Y:10, C:10)
+PCM sample bit depth                   : (Y:8, C:8)
+Intra reference smoothing              : Enabled
+diff_cu_chroma_qp_offset_depth         : -1
+extended_precision_processing_flag     : Disabled
+implicit_rdpcm_enabled_flag            : Disabled
+explicit_rdpcm_enabled_flag            : Disabled
+transform_skip_rotation_enabled_flag   : Disabled
+transform_skip_context_enabled_flag    : Disabled
+cross_component_prediction_enabled_flag: Disabled
+high_precision_offsets_enabled_flag    : Disabled
+persistent_rice_adaptation_enabled_flag: Disabled
+cabac_bypass_alignment_enabled_flag    : Disabled
+Intra block copying                    : Disabled
+Adaptive colour transform              : Disabled
+Palette mode                           : Disabled
+log2_sao_offset_scale_luma             : 0
+log2_sao_offset_scale_chroma           : 0
+Cost function:                         : Lossy coding (default)
+Motion Estimation                      : Diamond search
+HashME                                 : 0
+RateControl                            : 0
+WPMethod                               : 0
+Max Num Merge Candidates               : 5
+
+TOOL CFG: IBD:1 HAD:1 RDQ:1 RDQTS:1 RDpenalty:0 LQP:0 SQP:0 ASR:0 MinSearchWindow:8 RestrictMESampling:0 FEN:1 ECU:0 FDM:1 CFM:0 ESD:0 RQT:1 TransformSkip:1 TransformSkipFast:1 TransformSkipLog2MaxSize:2 Slice: M=0 SliceSegment: M=0 CIP:0 SAO:1 PCM:0 TransQuantBypassEnabled:0 WPP:0 WPB:0 PME:2  WaveFrontSynchro:0 WaveFrontSubstreams:1 ScalingList:0 TMVPMode:1 AQpS:0 SignBitHidingFlag:1 RecalQP:0TransQuantBypassInferTUSplit:0 CUNoSplitIntraACT:0  MvResControl:0
+
+
+Reading the aux info files
+                   Input ChromaFormatIDC =   4:2:0
+       Output (internal) ChromaFormatIDC =   4:2:0
+
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+
+	PCC ME GOP #1 ACTIVE
+POC    0 TId: 0 ( I-SLICE, nQP 41 QP 41 )     111456 bits [Y 33.0882 dB    U 38.2456 dB    V 37.9347 dB] [ET     8 ] [L0 ] [L1 ] [MD5:e4d762deff60cc4de02c16dfba3309c2,d363ee52a7ed9c32946bf0be507bdd53,448af9be06d60f07d76a1e521d04ce8e]
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+copy image from PCC: Shift = 2 (1280x1280 => 1280x1280 S=1440 C:  640x 640 ) 
+
+	PCC ME GOP #1 ACTIVE
+POC    8 TId: 1 ( B-SLICE, nQP 46 QP 46 )      32576 bits [Y 31.2575 dB    U 37.0332 dB    V 36.3859 dB] [ET    24 ] [L0 0 ] [L1 0 ] [MD5:6061428c4aa85ce753e79bc3a511f890,cf300e099a5a1302c56a9db1cd6019d1,4c8887bece4756afb97b26aaeb9edc06]
+POC    4 TId: 2 ( B-SLICE, nQP 49 QP 49 )      11152 bits [Y 30.9064 dB    U 36.7529 dB    V 36.0762 dB] [ET    25 ] [L0 0 8 ] [L1 8 0 ] [MD5:ff39d1c380ec4e324936b56728021b4d,d247a9ecbdc04de3e0d0cc22a24fd2e0,1dde27e77e87b5846a52fd7e69f42432]
+POC    2 TId: 3 ( B-SLICE, nQP 50 QP 50 )       6024 bits [Y 31.0839 dB    U 36.9702 dB    V 36.2820 dB] [ET    27 ] [L0 0 4 ] [L1 4 8 ] [MD5:305869388cd8d6ed82bfb45aa8372b11,0b2426852d0837dcd5a60b694f0b5eb2,06b6b775727e60a883321632ea78d756]
+POC    1 TId: 4 ( B-SLICE, nQP 51 QP 51 )        280 bits [Y 32.8990 dB    U 38.2406 dB    V 37.9196 dB] [ET    26 ] [L0 0 2 ] [L1 2 4 ] [MD5:919f92e9a82f54581e95b8c5607325e4,ad47f07bcff442fad59120b8fc861c1f,cf0a991c2c7abf8bc7fdc0a2c2e9135b]
+POC    3 TId: 4 ( B-SLICE, nQP 51 QP 51 )        216 bits [Y 31.0503 dB    U 36.9740 dB    V 36.2823 dB] [ET    28 ] [L0 2 0 ] [L1 4 8 ] [MD5:b9481040101f7bcc9a905fa829066f7d,c61dbec317c3c39c32275fc34877aa32,ae8a6fb31155355fbe9c43859161c933]
+POC    6 TId: 3 ( B-SLICE, nQP 50 QP 50 )       6576 bits [Y 30.7034 dB    U 36.6283 dB    V 36.0124 dB] [ET    28 ] [L0 4 0 ] [L1 8 4 ] [MD5:4d76b9f063ddf6ae02ba6853716d18fd,01958b4cfbe9a1df4fa41d55450aec28,0ca005334db4689d19613ee1a3dd994b]
+POC    5 TId: 4 ( B-SLICE, nQP 51 QP 51 )        456 bits [Y 30.8654 dB    U 36.7552 dB    V 36.1023 dB] [ET    29 ] [L0 4 0 ] [L1 6 8 ] [MD5:b5d37743c7afb7d8928349317080f0ed,a7ed35e2bfac4a602b1abf4e82ba7d25,b46affa7940b4dd6a0626230243d2f1d]
+POC    7 TId: 4 ( B-SLICE, nQP 51 QP 51 )        392 bits [Y 30.6419 dB    U 36.6429 dB    V 36.0204 dB] [ET    25 ] [L0 6 4 ] [L1 8 6 ] [MD5:24f931f6d83d33160f10ecd1f29df15a,759d9457c2d1417a9049ffb784abf71b,a691b02d87099da9252ffbc88c20f289]
+POC   12 TId: 2 ( B-SLICE, nQP 49 QP 49 )      17368 bits [Y 29.9637 dB    U 35.8843 dB    V 35.2362 dB] [ET    29 ] [L0 8 0 ] [L1 8 0 ] [MD5:d43a9b139e7be0600afa4f1df1397cb9,f1068460f7ad68422e999eff1bc1bb38,3456e4322387e578a1ee8f1f35d196fd]
+POC   10 TId: 3 ( B-SLICE, nQP 50 QP 50 )       7312 bits [Y 30.0572 dB    U 36.1802 dB    V 35.3740 dB] [ET    29 ] [L0 8 0 ] [L1 12 8 ] [MD5:e0c5168b45d6c3b322d42929f39c57fb,0ea31eab0e4bb95e49e4d5bff7db223f,d02bc202f929ca9e102a666c6298e8f1]
+POC    9 TId: 4 ( B-SLICE, nQP 51 QP 51 )        192 bits [Y 31.1322 dB    U 37.0354 dB    V 36.3734 dB] [ET    30 ] [L0 8 0 ] [L1 10 12 ] [MD5:73e2ce56327e3f7b47e73c5f091ed27b,722b4e9d4b3a59c54d4a51931d4de84e,1bd5c6ac9b605f522352d698c9c1602c]
+POC   11 TId: 4 ( B-SLICE, nQP 51 QP 51 )        304 bits [Y 30.0572 dB    U 36.1812 dB    V 35.3741 dB] [ET    25 ] [L0 10 8 ] [L1 12 10 ] [MD5:445d3074af47e3c29b269130d8d9977b,9d202b6361d09154e1b2f3c010467df1,d767307b4996f8a356c9f59b0543f583]
+POC   14 TId: 3 ( B-SLICE, nQP 50 QP 50 )      10976 bits [Y 29.5999 dB    U 35.4991 dB    V 34.7358 dB] [ET    26 ] [L0 12 8 ] [L1 12 8 ] [MD5:0cb1d428b4b8443cd45fde39a339c4ce,d3587f4a30784b61b7077e09eeda0e3d,6d12e582cec058b786140213961dfc43]
+POC   13 TId: 4 ( B-SLICE, nQP 51 QP 51 )        696 bits [Y 29.9486 dB    U 35.9531 dB    V 35.3381 dB] [ET    26 ] [L0 12 8 ] [L1 14 12 ] [MD5:d764c67f76d66641d539abb9714cb3d4,05c67242a7a3619acd4a6e071450a5f9,2543009730fe3aa3d09441add60967e3]
+POC   15 TId: 4 ( B-SLICE, nQP 51 QP 51 )        472 bits [Y 29.5759 dB    U 35.5414 dB    V 34.7850 dB] [ET    22 ] [L0 14 12 ] [L1 14 12 ] [MD5:2a5c5aff98acb90d7a5ba41c608d7678,5fd7789956491dce0a852d6d73ce0276,afdd61c184e171976b41cc802fc5408c]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	       16    a     387.0900   30.8019   36.6573   36.0145   31.8922  
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        1    i    3343.6800   33.0882   38.2456   37.9347   34.2115  
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	        0    p         -nan      -nan      -nan      -nan      -nan  
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR  
+	       15    b     189.9840   30.6495   36.5515   35.8865   31.7740  
+
+RVM: 0.000
+Bytes written to file: 26718 (400.770 kbps)
+
+HMEncoder Total Time:      407.221 sec.
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 2 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Image write 1280x1280 T = 1 nbyte = 1 color format = 3 channel size = 1638400 409600 409600 
+Unknown parameter <UseAdaptiveFiltering>
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+Image write 1280x1280 T = 2 nbyte = 2 color format = 2 channel size = 1638400 1638400 1638400 
+attribute video ->26735 B (0.0174551233 bpp)
+Color Point Clouds
+Post Processing Point Clouds
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+Post-Processing: attributeTransfer_ = 1 flagGeometrySmoothing_ = 1 flagColorSmoothing_ = 0 pbfEnableFlag = 0 
+createPatchFrameDataStructure 
+createPatchFrameDataStructure frameIndex = 0 / 8 
+createPatchFrameDataStructure frameIndex = 0 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 1 / 8 
+createPatchFrameDataStructure frameIndex = 1 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 2 / 8 
+createPatchFrameDataStructure frameIndex = 2 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 3 / 8 
+createPatchFrameDataStructure frameIndex = 3 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 4 / 8 
+createPatchFrameDataStructure frameIndex = 4 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 5 / 8 
+createPatchFrameDataStructure frameIndex = 5 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 6 / 8 
+createPatchFrameDataStructure frameIndex = 6 tile 0 / 1 
+createPatchFrameDataStructure frameIndex = 7 / 8 
+createPatchFrameDataStructure frameIndex = 7 tile 0 / 1 
+Done Encoder 
+      occupancy map video  ->12387 B 
+      geometry video  ->26087 B 
+      attribute video  ->26735 B 
+ChecksumRec: e17b740a9fc98d9710dbdff169790d22
+ChecksumRec: 500c15524f2f2fe70e983eaaff06d933
+ChecksumRec: 5d3b7b6c1bf7c3876c4f85abe13660f5
+ChecksumRec: 5310e1f2a7e0425716674c2e0a7afb51
+ChecksumRec: 27d8b082f9739db5404f0a9d6bd682e7
+ChecksumRec: 0de2d99b3bde3addf22013125372b5a9
+ChecksumRec: c76db7a89872eff58336239249d465b1
+ChecksumRec: 040b3fffb669a15d3a6cf5ab00c34231
